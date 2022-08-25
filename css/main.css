@@ -1,0 +1,27 @@
+/* 메인  */
+.content {
+  width: 100%;
+}
+.main-visual {
+  width: 100%;
+}
+.bounce {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 36px;
+  right: 50%;
+}
+.bounce img {
+  width: 100%;
+}
+
+/* 메인 슬라이드 */
+.main-slide {
+  padding: 135px;
+  width: 100%;
+}
+.main-slide_wrap {
+  width: 100%;
+  float: right;
+}

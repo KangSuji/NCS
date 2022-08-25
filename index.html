@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <title>NCS</title>
   </head>
   <body>
     <div class="wrap">
       <header class="header">
-        <div class="logo">NCS</div>
+        <div class="logo">NCS Logo</div>
         <div class="util">
           <span class="search">
             <img src="./images/ic_cs3_on.png" />
@@ -30,19 +32,175 @@
           <div class="nav-bottom">
             <ul class="dep1">
               <li>
-                <a href="javascript:void(0)">About</a>
-                <ul class="dep2">
-                  <li>Greetings</li>
-                  <li>Mission, Vision and Value</li>
-                  <li>Accreditation and Members</li>
-                  <li>History</li>
-                  <li>Our People</li>
-                  <li>Career Opportunities</li>
-                  <li>Contact</li>
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">About</a>
+                  <span class="moreBtn" id="moreBtn1">+</span>
+                </div>
+                <ul class="dep2" id="moreBtn1">
+                  <li>
+                    <a href="javascript:void(0)">Greetings</a>
+                    <span class="dep2-sub-tit">Founder's message / From the Principal</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Mission, Vision and Values</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Accreditation and Memberships</a>
+                    <span class="dep2-sub-tit">ACSI</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">History</a>
+                    <span class="dep2-sub-tit">step 1 ~ step 5</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Our People</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Career Opportuniies</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Contact</a>
+                    <span class="dep2-sub-tit">Phone number / Location</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Admissions</a>
+                  <span class="moreBtn" id="moreBtn2">+</span>
+                </div>
+                <ul class="dep2" id="moreBtn2">
+                  <li>
+                    <a href="javascript:void(0)">Overview</a>
+                    <span class="dep2-sub-tit">step 1 ~ step 5</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Importmant Dates & Deadlines</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Apply</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Tuition & Financial Aid</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Meet the Admission Team</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Events</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Admission FAQ</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Academic</a>
+                  <span class="moreBtn" id="moreBtn3">+</span>
+                </div>
+                <ul class="dep2" id="moreBtn3">
+                  <li>
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">Curriculum</a>
+                      <span class="moreBtn2" id="moreBtn3-1">+</span>
+                    </div>
+                    <ul class="dep3" id="moreBtn3-1">
+                      <li>
+                        <a href="javascript:void(0)">Courses</a>
+                        <span class="dep2-sub-tit">Founder's message / From the Principal</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Dual Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Project Based Learning</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Graduation Requirements</a>
+                        <span class="dep2-sub-tit">requirements</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">TAC's</a>
+                        <span class="dep2-sub-tit">metaverse curriculum</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">College Counseling</a>
+                      <span class="moreBtn2" id="moreBtn3-2">+</span>
+                    </div>
+                    <ul class="dep3" id="moreBtn3-2">
+                      <li>
+                        <a href="javascript:void(0)">Courses</a>
+                        <span class="dep2-sub-tit">Founder's message / From the Principal</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Dual Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Project Based Learning</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Counseling</a>
+                    <span class="dep2-sub-tit">grade10 ~ 12</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">College Acceptances</a>
+                    <span class="dep2-sub-tit">by country</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Student Life</a>
+                  <span class="moreBtn" id="moreBtn4">+</span>
+                </div>
+                <ul class="dep2" id="moreBtn4">
+                  <li>
+                    <a href="javascript:void(0)">Living Abroad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Diversity</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Clubs & Sports</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Outreach</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Spiritual Life</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">EGuest Speakers</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Global Experiences</a>
+                  <span class="moreBtn" id="moreBtn5">+</span>
+                </div>
+                <ul class="dep2" id="moreBtn5">
+                  <li>
+                    <a href="javascript:void(0)">Experiential Learning</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Host Countries</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Safety & Security</a>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
+          <div class="login">Login</div>
         </div>
       </nav>
 
