@@ -23,7 +23,6 @@
 
 /* 메인 슬라이드 */
 .main-slide {
-  padding: 0 0 135px;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -80,16 +79,23 @@
   width: 162px;
   height: 62px;
   border-radius: 31px;
-  background-color: #a10136;
+  background-color: #ffe7bf;
   margin-right: 38px;
   line-height: 62px;
   text-align: center;
+  color: #a10136;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+.grade_btn.btnActive {
+  background-color: #a10136;
   color: #fff;
 }
 .right-bottom-text {
   width: 700px;
   padding: 36px 0 36px 350px;
-  font-family: "Arial";
+  font-family: "Arial", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: -0.4px;
@@ -109,24 +115,28 @@
   width: 100%;
 }
 .swiper-wrapper {
+  width: 700px;
   height: 700px;
 }
 .swiper-slide {
   width: 480px;
   height: 620px;
   position: relative;
-  flex-shrink: 1;
 }
 #img1 {
-  background: url("https://swiperjs.com/demos/images/nature-1.jpg") no-repeat;
+  background: #640121 no-repeat;
   background-size: cover;
 }
 #img2 {
-  background: url("https://swiperjs.com/demos/images/nature-2.jpg") no-repeat;
+  background: #640121 no-repeat;
   background-size: cover;
 }
 #img3 {
-  background: url("https://swiperjs.com/demos/images/nature-3.jpg") no-repeat;
+  background: #640121 no-repeat;
+  background-size: cover;
+}
+#img4 {
+  background: #640121 no-repeat;
   background-size: cover;
 }
 .swiper-slide img {
@@ -159,8 +169,151 @@
 }
 .img-pagination {
   width: 480px;
-  height: 50px;
+  height: 300px;
   position: absolute;
   left: 0px;
   bottom: 0;
+  padding-left: 20%;
+
+  box-sizing: border-box;
+}
+
+/* MAP */
+.map,
+.what {
+  width: 100%;
+}
+.map-wrap {
+  width: 100%;
+  padding: 0px 90px 82px;
+  box-sizing: border-box;
+}
+
+.map-tit {
+  width: 100%;
+  height: 97px;
+  padding-left: 10.94%;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #a10136;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.map-img-wrap {
+  width: 100%;
+  height: 820px;
+  background-color: #ffe7bf;
+}
+
+/* what's on */
+
+.what-wrap {
+  width: 100%;
+  padding: 150px 0 179px 301px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.what-tit {
+  width: 100%;
+  height: 97px;
+  /* padding-left: 10.94%; */
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.what-title {
+  font-size: 80px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #a10136;
+}
+.arr {
+  display: inline-block;
+  margin-right: 15.63%;
+  float: right;
+}
+.prev,
+.next {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #a10136;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56px;
+  margin-left: 20px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #a10136;
+}
+.what-img-wrap {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+.what-box {
+  width: 420px !important ;
+  height: 803px;
+  margin-right: 81px;
+  background-color: #fff;
+  border-bottom: 1px solid #a10136;
+}
+.what-box:first-child {
+  margin-right: 31px;
+}
+.what-img {
+  width: 420px;
+  height: 420px;
+  background-color: #f39a00;
+  position: relative;
+}
+.img-text {
+  width: 420px;
+  height: 60px;
+  background-color: #a10136;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.what-text {
+  width: 420px;
+  margin-top: 80px;
+  margin-right: 18px;
+}
+.what-text span {
+  display: inline-block;
+  width: 100%;
+}
+.what-text-tit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #a10136;
+}
+.what-text-txt {
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 22px;
+  color: #ff869e;
+  margin-top: 40px;
+}
+.what-text-more {
+  height: 52px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ae0c1e;
+  margin-top: 52px;
 }

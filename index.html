@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 
     <script type="text/javascript" src="js/index.js"></script>
     <title>NCS</title>
@@ -31,9 +34,11 @@
 
       <nav class="navigation">
         <div class="nav-wrap">
+          <span class="hamburgerX"> X </span>
           <div class="nav-top">
             <div class="nav-top_text">Home</div>
           </div>
+
           <div class="nav-bottom">
             <ul class="dep1">
               <li>
@@ -221,15 +226,19 @@
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide" id="img1">
+                    <div class="imgNum">Term 01</div>
+                    <div class="imgText">OCT / NOV / DEC</div>
+                  </div>
+                  <div class="swiper-slide" id="img2" style="width: 480px">
                     <div class="imgNum">Term 02</div>
                     <div class="imgText">OCT / NOV / DEC</div>
                   </div>
-                  <div class="swiper-slide" id="img2">
-                    <div class="imgNum">Term 02</div>
+                  <div class="swiper-slide" id="img3" style="width: 480px">
+                    <div class="imgNum">Term 03</div>
                     <div class="imgText">OCT / NOV / DEC</div>
                   </div>
-                  <div class="swiper-slide" id="img3">
-                    <div class="imgNum">Term 02</div>
+                  <div class="swiper-slide" id="img4" style="width: 480px">
+                    <div class="imgNum">Term 04</div>
                     <div class="imgText">OCT / NOV / DEC</div>
                   </div>
                 </div>
@@ -241,7 +250,7 @@
               <div class="right-text-shadow">Global Experiences host contries</div>
               <span class="line-1"></span>
               <div class="btn_wrap">
-                <div class="grade_btn">Grade 10</div>
+                <div class="grade_btn btnActive">Grade 10</div>
                 <div class="grade_btn">Grade 11</div>
                 <div class="grade_btn">Grade 12</div>
               </div>
@@ -249,6 +258,79 @@
             </div>
           </div>
         </section>
+        <section class="map">
+          <div class="map-wrap">
+            <div class="map-tit">Take a glance: Grade 10</div>
+            <div class="map-img-wrap"></div>
+          </div>
+        </section>
+        <section class="what">
+          <div class="what-wrap">
+            <div class="what-tit">
+              <span class="what-title">What's on?</span>
+              <span class="arr">
+                <span class="prev"><</span>
+                <span class="next">></span>
+              </span>
+            </div>
+
+            <div class="what-img-wrap">
+              <div class="what-box">
+                <div class="what-img">
+                  <span class="img-text">NEWS1</span>
+                </div>
+                <div class="what-text">
+                  <span class="what-text-tit">NEWS & EVENTS</span>
+                  <span class="what-text-txt">
+                    A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+                  </span>
+                  <span class="what-text-more">→&nbsp;&nbsp;&nbsp;&nbsp;FIND OUT MORE</span>
+                </div>
+              </div>
+              <div class="what-box">
+                <div class="what-img">
+                  <span class="img-text">NEWS2</span>
+                </div>
+                <div class="what-text">
+                  <span class="what-text-tit">NEWS & EVENTS</span>
+                  <span class="what-text-txt">
+                    A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+                  </span>
+                  <span class="what-text-more">→&nbsp;&nbsp;&nbsp;&nbsp;FIND OUT MORE</span>
+                </div>
+              </div>
+              <div class="what-box">
+                <div class="what-img">
+                  <span class="img-text">NEWS3</span>
+                </div>
+                <div class="what-text">
+                  <span class="what-text-tit">NEWS & EVENTS</span>
+                  <span class="what-text-txt">
+                    A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+                  </span>
+                  <span class="what-text-more">→&nbsp;&nbsp;&nbsp;&nbsp;FIND OUT MORE</span>
+                </div>
+              </div>
+              <div class="what-box">
+                <div class="what-img">
+                  <span class="img-text">NEWS4</span>
+                </div>
+                <div class="what-text">
+                  <span class="what-text-tit">NEWS & EVENTS</span>
+                  <span class="what-text-txt">
+                    A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+                  </span>
+                  <span class="what-text-more">→&nbsp;&nbsp;&nbsp;&nbsp;FIND OUT MORE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer-search_bar">
+            <div></div>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
