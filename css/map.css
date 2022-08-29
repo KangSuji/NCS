@@ -1,0 +1,422 @@
+.map-inner-text {
+  position: absolute;
+  color: #a10136;
+}
+.map-inner-circle {
+  position: absolute;
+  width: 9.5%;
+}
+.map-inner-line {
+  position: absolute;
+  display: inline-block;
+  background-color: #a10136;
+}
+.map-inner-text1 {
+  font-size: 28px;
+  font-weight: 900;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+.map-inner-text2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+.ko-text li,
+.france-text li,
+.aust-text li,
+.taiwan-text li,
+.italy-text li,
+.uae-text li,
+.malay-text li,
+.israel-text li,
+.usa-text li {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+.ko-text li:before,
+.france-text li:before,
+.aust-text li::before,
+.taiwan-text li::before,
+.italy-text li::before,
+.uae-text li::before,
+.malay-text li::before,
+.israel-text li::before,
+.usa-text li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #a10136;
+  margin-bottom: 3px;
+  margin-right: 10px;
+  margin-left: 3px;
+}
+#ko1 {
+  width: 1.2%;
+  position: absolute;
+  top: 39.6%;
+  left: 41.4%;
+}
+#ko2 {
+  position: absolute;
+  width: 7%;
+  top: 12%;
+  left: 38%;
+}
+#ko3 {
+  top: 8.2%;
+  left: 37%;
+}
+#ko-line {
+  top: 20%;
+  left: 42%;
+  width: 3px;
+  height: 21%;
+}
+
+.ko-text {
+  top: 5%;
+  left: 48%;
+}
+#ko4 {
+  width: 65%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+
+#line_1to2 {
+  position: absolute;
+  width: 33%;
+  top: 27.5%;
+  left: 8.5%;
+}
+#france1 {
+  width: 3.6%;
+  position: absolute;
+  top: 32.5%;
+  left: 7%;
+}
+#france2 {
+  width: 4.5%;
+  position: absolute;
+  top: 72%;
+  left: 11%;
+}
+#france3 {
+  top: 67%;
+  left: 8.5%;
+}
+#france4 {
+  width: 58%;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+}
+#france-line1 {
+  top: 35.5%;
+  left: 9%;
+  width: 4.2%;
+  height: 3px;
+}
+#france-line2 {
+  top: 35.5%;
+  left: 13.14%;
+  width: 3px;
+  height: 32.8%;
+}
+.france-text {
+  top: 64%;
+  left: 20%;
+}
+#line_2to3 {
+  position: absolute;
+  width: 33%;
+  top: 35.5%;
+  left: 10%;
+}
+#aust1 {
+  width: 10.7%;
+  position: absolute;
+  top: 68.7%;
+  left: 38.1%;
+}
+#aust2 {
+  width: 7.5%;
+  position: absolute;
+  top: 75.5%;
+  left: 55%;
+}
+#aust3 {
+  top: 69.7%;
+  left: 54%;
+}
+#aust4 {
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+#aust-line {
+  top: 79.2%;
+  left: 48.5%;
+  width: 6%;
+  height: 3px;
+}
+.aust-text {
+  top: 69.7%;
+  left: 65%;
+}
+#line_3to4 {
+  width: 4.2%;
+  position: absolute;
+  top: 50.5%;
+  left: 40.3%;
+}
+#taiwan1 {
+  width: 1%;
+  position: absolute;
+  top: 49.3%;
+  left: 39.3%;
+}
+#taiwan2 {
+  width: 6%;
+  position: absolute;
+  top: 45%;
+  left: 47%;
+}
+#taiwan3 {
+  top: 40.3%;
+  left: 45.4%;
+}
+#taiwan4 {
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+#taiwan-line {
+  top: 49.8%;
+  left: 40%;
+  width: 6%;
+  height: 3px;
+}
+.taiwan-text {
+  position: absolute;
+  top: 40.3%;
+  left: 56.5%;
+  color: #a10136;
+}
+
+/* italy */
+#italy1 {
+  width: 3%;
+  position: absolute;
+  top: 35.5%;
+  left: 10%;
+}
+#italy2 {
+  width: 6%;
+  position: absolute;
+  top: 10.5%;
+  left: 22.5%;
+}
+#italy3 {
+  top: 6%;
+  left: 20.5%;
+}
+#italy4 {
+  width: 70%;
+  position: absolute;
+  top: 33%;
+  left: 70%;
+}
+#italy-line1 {
+  top: 15.5%;
+  left: 11%;
+  width: 10%;
+  height: 3px;
+}
+#italy-line2 {
+  top: 15.5%;
+  left: 11%;
+  width: 3px;
+  height: 21%;
+}
+#grade11-line_1to2 {
+  width: 11%;
+  position: absolute;
+  top: 37%;
+  left: 11.5%;
+}
+.italy-text {
+  top: 4%;
+  left: 31.5%;
+}
+/* UAE */
+#uae1 {
+  position: absolute;
+  width: 1%;
+  top: 49%;
+  left: 22%;
+}
+#uae2 {
+  position: absolute;
+  width: 2%;
+  top: 62.5%;
+  left: 46.5%;
+}
+#uae3 {
+  top: 62.5%;
+  left: 42.8%;
+}
+#uae4 {
+  width: 90%;
+  position: absolute;
+  top: 33%;
+  left: 100%;
+}
+#uae-line1 {
+  width: 3px;
+  height: 22%;
+  top: 50%;
+  left: 22.5%;
+}
+#uae-line2 {
+  width: 21%;
+  height: 3px;
+  top: 72%;
+  left: 22.5%;
+}
+.uae-text {
+  top: 62.5%;
+  left: 55%;
+}
+#grade11-line_2to3 {
+  position: absolute;
+  width: 16%;
+  top: 48%;
+  left: 22.5%;
+}
+/* malaysia */
+#malay1 {
+  position: absolute;
+  width: 5%;
+  top: 59.2%;
+  left: 34.5%;
+}
+#malay2 {
+  position: absolute;
+  width: 4.5%;
+  top: 35%;
+  left: 52%;
+}
+#malay3 {
+  top: 32.5%;
+  left: 49.5%;
+}
+#malay4 {
+  width: 50%;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+}
+#grade11-line_3to4 {
+  position: absolute;
+  width: 21%;
+  top: 46%;
+  left: 17%;
+}
+.malay-text {
+  top: 31%;
+  left: 61%;
+}
+#malay-line1 {
+  width: 12%;
+  height: 3px;
+  top: 41.9%;
+  left: 38%;
+}
+#malay-line2 {
+  width: 3px;
+  height: 20%;
+  top: 42%;
+  left: 38%;
+}
+/* israel */
+#israel1 {
+  position: absolute;
+  width: 0.3%;
+  top: 45.2%;
+  left: 17%;
+}
+#israel2 {
+  position: absolute;
+  width: 6%;
+  top: 83%;
+  left: 14.2%;
+}
+#israel3 {
+  top: 79.5%;
+  left: 12.3%;
+}
+#israel4 {
+  width: 65%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+#israel-line1 {
+  width: 3px;
+  height: 33%;
+  top: 46.5%;
+  left: 17%;
+}
+.israel-text {
+  top: 79%;
+  left: 23%;
+}
+
+/* grade12 */
+
+/* USA */
+#usa1 {
+  position: absolute;
+  width: 10%;
+  right: 31.5%;
+  top: 15%;
+}
+#usa2 {
+  position: absolute;
+  width: 7.5%;
+  right: 24.5%;
+  top: 7%;
+}
+#usa3 {
+  right: 23.5%;
+  top: 1.2%;
+}
+#usa-line1 {
+  width: 3px;
+  height: 6%;
+  right: 28.1%;
+  top: 19%;
+}
+#usa-line2 {
+  width: 5%;
+  height: 3px;
+  right: 23.3%;
+  top: 25%;
+}
+#usa-line3 {
+  width: 3px;
+  height: 6%;
+  right: 23.3%;
+  top: 25%;
+}
+.usa-text {
+  right: 15%;
+  top: -2%;
+}

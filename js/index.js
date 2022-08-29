@@ -84,17 +84,6 @@ $(document).ready(function () {
     },
   });
 
-  $(".what-img-wrap").slick({
-    centerMode: true,
-    slidesToShow: 3,
-    initialSlide: 1,
-    infinite: true,
-    swipeToSlide: true,
-    speed: 1300,
-    nextArrow: $(".next"),
-    prevArrow: $(".prev"),
-  });
-
   $("#Grade10").click(function () {
     swiper.slideTo(0, 100);
     $("#Grade10").addClass("btnActive");
@@ -127,4 +116,14 @@ $(document).ready(function () {
       $(`#img${i}`).css({ background: `url(./images/grade10_${i}.jpg)` });
     }
   }
+  $(".what-img-wrap").slick({
+    centerMode: true,
+    slidesToShow: 3,
+    initialSlide: 1,
+    infinite: true,
+    swipeToSlide: true,
+    speed: 1300,
+    nextArrow: $(".next"),
+    prevArrow: $(".prev"),
+  });
 });

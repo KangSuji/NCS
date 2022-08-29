@@ -193,28 +193,29 @@
 }
 .map-wrap {
   width: 100%;
-  padding: 0px 90px 82px;
+  padding: 0px 150px 82px 0px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .map-tit {
   width: 100%;
   height: 97px;
-  padding-left: 10.94%;
+  margin-left: 300px;
+  margin-top: 20px;
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 80px;
   line-height: 40px;
   font-weight: 800;
   color: #a10136;
-  box-sizing: border-box;
   display: inline-block;
 }
 
 .map-img-wrap {
-  width: 100%;
-  height: 820px;
-  background-color: #ffe7bf;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* what's on */
@@ -247,6 +248,7 @@
 }
 .prev,
 .next {
+  display: inline-block;
   width: 56px;
   height: 56px;
 }

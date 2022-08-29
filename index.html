@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/map.css" />
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -271,9 +272,154 @@
         <section class="map">
           <div class="map-wrap">
             <div class="map-tit">Take a glance: Grade 10</div>
-            <div class="map-img-wrap"></div>
           </div>
         </section>
+        <div class="map-img-wrap">
+          <img src="/images/map/grade10_지도요소/map_bg.svg" />
+          <!-- korea -->
+          <img src="/images/map/grade10_지도요소/korea_area.svg" id="ko1" />
+          <span id="ko-line" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/korea_icon.svg" id="ko2" />
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="ko3" class="map-inner-circle" />
+
+          <div class="ko-text map-inner-text">
+            <img src="./images/map/grade10_지도요소/korea_flag.png" id="ko4" />
+            <span class="map-inner-text1">1. KOREA</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>July</li>
+            <li>August</li>
+            <li>September</li>
+          </div>
+          <img src="./images/map/grade10_지도요소/line_1to2.svg" id="line_1to2" />
+          <img src="./images/map/grade10_지도요소/france_area.svg" id="france1" />
+          <span id="france-line1" class="map-inner-line"></span>
+          <span id="france-line2" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/france_icon.svg" id="france2" />
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="france3" class="map-inner-circle" />
+          <div class="france-text map-inner-text">
+            <img src="./images/map/grade10_지도요소/france_flag.png" id="france4" />
+            <span class="map-inner-text1">2. FRANCE</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>October</li>
+            <li>November</li>
+            <li>December</li>
+          </div>
+          <img src="./images/map/grade10_지도요소/line_2to3.svg" id="line_2to3" />
+          <img src="./images/map/grade10_지도요소/aust_area.svg" id="aust1" />
+          <span id="aust-line" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/aust_icon.svg" id="aust2" />
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="aust3" class="map-inner-circle" />
+
+          <div class="aust-text map-inner-text">
+            <img src="./images/map/grade10_지도요소/aust_flag.svg" id="aust4" />
+            <span class="map-inner-text1">3. AUSTRALIA</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>January</li>
+            <li>Febuary</li>
+            <li>March</li>
+          </div>
+          <img src="./images/map/grade10_지도요소/line_3to4.svg" id="line_3to4" />
+          <img src="./images/map/grade10_지도요소/taiwan_area.svg" id="taiwan1" />
+          <span id="taiwan-line" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/taiwan_icon.svg" id="taiwan2" />
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="taiwan3" class="map-inner-circle" />
+          <div class="taiwan-text map-inner-text">
+            <img src="./images/map/grade10_지도요소/taiwan_flag.png" id="taiwan4" />
+            <span class="map-inner-text1">4. TAIWAN</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>April</li>
+            <li>May</li>
+            <li>June</li>
+          </div>
+        </div>
+
+        <!-- grade11 map -->
+        <div class="map-img-wrap">
+          <img src="/images/map/grade10_지도요소/map_bg.svg" />
+          <!-- italy -->
+          <img src="/images/map/grade11_지도요소/italy_area.svg" id="italy1" />
+          <img src="/images/map/grade11_지도요소/italy_icon.svg" id="italy2" />
+          <span id="italy-line1" class="map-inner-line"></span>
+          <span id="italy-line2" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="italy3" class="map-inner-circle" />
+          <img src="/images/map/grade11_지도요소/line_1to2.svg" id="grade11-line_1to2" />
+          <div class="italy-text map-inner-text">
+            <img src="/images/map/grade11_지도요소/italy_flag.png" id="italy4" />
+            <span class="map-inner-text1">1. ITALY</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>July</li>
+            <li>August</li>
+            <li>September</li>
+          </div>
+          <!-- UAE -->
+          <img src="./images/map/grade11_지도요소/uae_area.svg" id="uae1" />
+          <img src="./images/map/grade11_지도요소/uae_icon.svg" id="uae2" />
+          <span id="uae-line1" class="map-inner-line"></span>
+          <span id="uae-line2" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="uae3" class="map-inner-circle" />
+          <img src="/images/map/grade11_지도요소/line_2to3.svg" id="grade11-line_2to3" />
+          <div class="uae-text map-inner-text">
+            <img src="./images/map/grade11_지도요소/uae_flag.png" id="uae4" />
+            <span class="map-inner-text1">2. UAE</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>October</li>
+            <li>November</li>
+            <li>December</li>
+          </div>
+          <!-- malaysia -->
+          <img src="./images/map/grade11_지도요소/malay_area.svg" id="malay1" />
+          <img src="./images/map/grade11_지도요소/malay_icon.svg" id="malay2" />
+          <span id="malay-line1" class="map-inner-line"></span>
+          <span id="malay-line2" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="malay3" class="map-inner-circle" />
+          <img src="/images/map/grade11_지도요소/line_3to4.svg" id="grade11-line_3to4" />
+
+          <div class="malay-text map-inner-text">
+            <img src="./images/map/grade11_지도요소/malay_flag.png" id="malay4" />
+            <span class="map-inner-text1">3. MALAYSIA</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>January</li>
+            <li>Febuary</li>
+            <li>March</li>
+          </div>
+
+          <!-- israel -->
+          <img src="./images/map/grade11_지도요소/israel_area.svg" id="israel1" />
+          <img src="./images/map/grade11_지도요소/israel_icon.svg" id="israel2" />
+          <span id="israel-line1" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="israel3" class="map-inner-circle" />
+          <div class="israel-text map-inner-text">
+            <img src="./images/map/grade11_지도요소/israel_flag.png" id="israel4" />
+            <span class="map-inner-text1">4. ISRAEL</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>April</li>
+            <li>May</li>
+            <li>June</li>
+          </div>
+        </div>
+        <!-- grade12 map -->
+        <div class="map-img-wrap">
+          <img src="/images/map/grade10_지도요소/map_bg.svg" />
+          <!-- italy -->
+          <img src="/images/map/grade12_지도요소/usa_area.svg" id="usa1" />
+          <img src="/images/map/grade12_지도요소/usa_icon.svg" id="usa2" />
+          <span id="usa-line1" class="map-inner-line"></span>
+          <span id="usa-line2" class="map-inner-line"></span>
+          <span id="usa-line3" class="map-inner-line"></span>
+          <img src="./images/map/grade10_지도요소/circle_dot.svg" id="usa3" class="map-inner-circle" />
+          <div class="usa-text map-inner-text">
+            <span class="map-inner-text1">1. USA</span><br />
+            <span class="map-inner-text2">8 weeks</span>
+            <li>July</li>
+            <li>August</li>
+            <li>September</li>
+          </div>
+          <!-- 
+            
+            <img src="./images/map/grade10_지도요소/circle_dot.svg" id="italy3"  class="map-inner-circle"/>
+            <img src="/images/map/grade11_지도요소/line_1to2.svg" id="grade11-line_1to2" />
+             -->
+        </div>
         <section class="what">
           <div class="what-wrap">
             <div class="what-tit">
@@ -283,7 +429,6 @@
                 <span class="next"></span>
               </span>
             </div>
-
             <div class="what-img-wrap">
               <div class="what-box">
                 <div class="what-img" id="what-img1">
