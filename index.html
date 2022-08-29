@@ -21,16 +21,26 @@
   <body>
     <div class="wrap">
       <header class="header">
-        <div class="logo">NCS Logo</div>
+        <div class="logo">
+          <img src="./images/logo_wht.png" />
+        </div>
         <div class="util">
           <span class="search">
-            <img src="./images/ic_cs3_on.png" />
+            <img src="./images/search_icon.png" />
+            <span class="searchText">search</span>
           </span>
           <span class="hamburger">
             <img src="./images/btn-menu-m.png" />
           </span>
         </div>
       </header>
+      <div class="header-search">
+        <img src="./images/close_btn.gif" class="closeBtn" />
+        <div class="header-input-area">
+          <input type="text" placeholder="Search..." />
+          <img src="./images/search_icon.png" />
+        </div>
+      </div>
 
       <nav class="navigation">
         <div class="nav-wrap">
@@ -244,15 +254,15 @@
                 </div>
               </div>
             </div>
-            <div class="img-pagination"></div>
+            <div class="img-pagination" style="bottom: -100px"></div>
             <div class="slide-right">
               <div class="right-text">Global Experiences host contries</div>
               <div class="right-text-shadow">Global Experiences host contries</div>
               <span class="line-1"></span>
               <div class="btn_wrap">
-                <div class="grade_btn btnActive">Grade 10</div>
-                <div class="grade_btn">Grade 11</div>
-                <div class="grade_btn">Grade 12</div>
+                <div class="grade_btn btnActive" id="Grade10">Grade 10</div>
+                <div class="grade_btn" id="Grade11">Grade 11</div>
+                <div class="grade_btn" id="Grade12">Grade 12</div>
               </div>
               <span class="right-bottom-text">*Visiting countries are subject to change due to conflict, natural disasters, travel restrictions etc.</span>
             </div>
@@ -269,14 +279,14 @@
             <div class="what-tit">
               <span class="what-title">What's on?</span>
               <span class="arr">
-                <span class="prev"><</span>
-                <span class="next">></span>
+                <span class="prev"></span>
+                <span class="next"></span>
               </span>
             </div>
 
             <div class="what-img-wrap">
               <div class="what-box">
-                <div class="what-img">
+                <div class="what-img" id="what-img1">
                   <span class="img-text">NEWS1</span>
                 </div>
                 <div class="what-text">
@@ -288,7 +298,7 @@
                 </div>
               </div>
               <div class="what-box">
-                <div class="what-img">
+                <div class="what-img" id="what-img2">
                   <span class="img-text">NEWS2</span>
                 </div>
                 <div class="what-text">
@@ -300,7 +310,7 @@
                 </div>
               </div>
               <div class="what-box">
-                <div class="what-img">
+                <div class="what-img" id="what-img3">
                   <span class="img-text">NEWS3</span>
                 </div>
                 <div class="what-text">
@@ -312,7 +322,7 @@
                 </div>
               </div>
               <div class="what-box">
-                <div class="what-img">
+                <div class="what-img" id="what-img4">
                   <span class="img-text">NEWS4</span>
                 </div>
                 <div class="what-text">
@@ -328,7 +338,48 @@
         </section>
         <footer class="footer">
           <div class="footer-search_bar">
-            <div></div>
+            <div class="input-area">
+              <input type="text" />
+            </div>
+            <div class="searchBtn">SEARCH PROGRAMS</div>
+          </div>
+          <div class="footer-info-wrap">
+            <div class="footer-logo">
+              <div><img src="./images/logo_color.png" /></div>
+            </div>
+            <div class="footer-info">
+              <div class="info-text">
+                <div class="text-bold">Next challenge School</div>
+                <div class="adress">
+                  <span id="adress-img"><img src="./images/foot_loaction.png" /></span>
+                  <span id="adress-text">
+                    16-9, Teheran-ro 64-gil, Gangnam-gu,<br />
+                    Seoul, Republic of Korea 06192
+                  </span>
+                </div>
+                <div class="tel">
+                  <img src="./images/foot_call.png" />
+                  <span id="tel-text">410-516-8000</span>
+                </div>
+                <div class="sns-wrap">
+                  <span><img src="./images/트위터로고.png" /></span>
+                  <span><img src="./images/페이스북로고.png" /></span>
+                  <span><img src="./images/링크드인로고.png" /></span>
+                  <span><img src="./images/유튜브로고.png" /></span>
+                  <span><img src="./images/인스타그램로고.png" /></span>
+                </div>
+                <div class="copyRight">© 2022 Next Challenge School. All rights reserved.</div>
+              </div>
+            </div>
+            <div class="footer-menu">
+              <ul>
+                <li>ABOUT</li>
+                <li>ADMISSIONS</li>
+                <li>ACADEMICS</li>
+                <li>STUDENT LIFE</li>
+                <li>GLOBAL EXPERIENCES</li>
+              </ul>
+            </div>
           </div>
         </footer>
       </div>

@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  //search 클릭
+  $(".search").click(function () {
+    $(".header-search").addClass("active");
+  });
+  $(".closeBtn").click(function () {
+    $(".header-search").removeClass("active");
+  });
+
   // 사이드 메뉴
   $(".moreBtn").click(function (e) {
     const id = e.target.id;
@@ -75,27 +83,7 @@ $(document).ready(function () {
       el: ".img-pagination",
     },
   });
-  // var swiper = new Swiper(".mySwiper", {
-  //   effect: "coverflow",
-  //   loop: true,
-  //   centeredSlides: true,
-  //   slidesPerView: 2,
-  //   initialSlide: 1,
-  //   keyboardControl: true,
-  //   mousewheelControl: true,
-  //   lazyLoading: true,
-  //   centeredSlides: true,
-  //   preventClicks: false,
-  //   preventClicksPropagation: false,
-  //   lazyLoadingInPrevNext: true,
-  //   coverflow: {
-  //     rotate: 0,
-  //     stretch: 400,
-  //     depth: 200,
-  //     modifier: 1,
-  //     slideShadows: true,
-  //   },
-  // });
+
   $(".what-img-wrap").slick({
     centerMode: true,
     slidesToShow: 3,
@@ -106,4 +94,37 @@ $(document).ready(function () {
     nextArrow: $(".next"),
     prevArrow: $(".prev"),
   });
+
+  $("#Grade10").click(function () {
+    swiper.slideTo(0, 100);
+    $("#Grade10").addClass("btnActive");
+    $("#Grade11").removeClass("btnActive");
+    $("#Grade12").removeClass("btnActive");
+    for (let i = 1; i < 5; i++) {
+      $(`#img${i}`).css({ background: `url(./images/grade10_${i}.jpg)` });
+    }
+  });
+  $("#Grade11").click(function () {
+    swiper.slideTo(0, 100);
+    $("#Grade11").addClass("btnActive");
+    $("#Grade10").removeClass("btnActive");
+    $("#Grade12").removeClass("btnActive");
+    for (let i = 1; i < 5; i++) {
+      $(`#img${i}`).css({ background: `url(./images/grade11_${i}.jpg)` });
+    }
+  });
+  $("#Grade12").click(function () {
+    swiper.slideTo(0, 100);
+    $("#Grade12").addClass("btnActive");
+    $("#Grade10").removeClass("btnActive");
+    $("#Grade11").removeClass("btnActive");
+    for (let i = 1; i < 5; i++) {
+      $(`#img${i}`).css({ background: `url(./images/grade12_${i}.jpg)` });
+    }
+  });
+  if ($("#Grade10").hasClass("btnActive")) {
+    for (let i = 1; i < 5; i++) {
+      $(`#img${i}`).css({ background: `url(./images/grade10_${i}.jpg)` });
+    }
+  }
 });
