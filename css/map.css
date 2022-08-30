@@ -77,12 +77,23 @@
   left: 37%;
 }
 #ko-line {
-  top: 20%;
-  left: 42%;
+  top: 26.5%;
+  left: 41.7%;
   width: 3px;
-  height: 21%;
+  height: 14.3%;
 }
-
+#ko-line::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #a10136;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
 .ko-text {
   top: 5%;
   left: 48%;
@@ -134,6 +145,18 @@
   width: 3px;
   height: 32.8%;
 }
+#france-line1::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #a10136;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
 .france-text {
   top: 64%;
   left: 20%;
@@ -172,6 +195,19 @@
   width: 6%;
   height: 3px;
 }
+#aust-line::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #a10136;
+  position: absolute;
+  bottom: 15px;
+  left: -90px;
+  z-index: 1;
+}
 .aust-text {
   top: 69.7%;
   left: 65%;
@@ -181,6 +217,7 @@
   position: absolute;
   top: 50.5%;
   left: 40.3%;
+  z-index: 999;
 }
 #taiwan1 {
   width: 1%;

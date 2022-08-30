@@ -16,9 +16,34 @@
   position: absolute;
   bottom: 36px;
   right: 50%;
+  animation: bounce 0.8s infinite linear;
+  cursor: pointer;
 }
 .bounce img {
   width: 100%;
+}
+@keyframes bounce {
+  0% {
+    bottom: 50px;
+  }
+  30% {
+    bottom: 60px;
+  }
+
+  50% {
+    bottom: 70px;
+  }
+
+  70% {
+    bottom: 75px;
+  }
+  90% {
+    bottom: 60px;
+  }
+
+  100% {
+    bottom: 50px;
+  }
 }
 
 /* 메인 슬라이드 */
@@ -88,6 +113,7 @@
   font-weight: bold;
   font-family: "Arial", Helvetica, sans-serif;
   z-index: 99;
+  cursor: pointer;
 }
 .grade_btn.btnActive {
   background-color: #a10136;
@@ -104,20 +130,18 @@
 }
 
 .slide-left {
-  width: 100%;
+  width: 549px;
   height: 700px;
   position: absolute;
   top: 111px;
   z-index: 5;
-  right: 350px;
+  right: 55%;
 }
 .swiper {
-  position: relative;
-  width: 100%;
 }
 .swiper-wrapper {
-  width: 700px;
-  height: 700px;
+  width: 700px !important;
+  /* height: 700px; */
 }
 .swiper-slide {
   width: 480px;
@@ -155,7 +179,7 @@
   color: #fff;
 }
 .imgText {
-  width: 480px;
+  width: 481px;
   height: 60px;
   background-color: #ff869e;
   text-align: center;
@@ -169,14 +193,12 @@
   bottom: 0;
 }
 .img-pagination {
-  width: 480px;
-  height: 300px;
+  width: 480px !important;
   position: absolute;
-  left: 0px;
-
-  padding-left: 19%;
-
+  left: 6% !important;
   box-sizing: border-box;
+  z-index: 9;
+  bottom: 6% !important;
 }
 .swiper-pagination-bullet {
   width: 14px;
@@ -251,6 +273,7 @@
   display: inline-block;
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 .prev {
   background-image: url(/images/arrow_left.png);
@@ -329,19 +352,19 @@
   color: #ae0c1e;
   margin-top: 52px;
 }
-#what-img1 {
+.what-img1 {
   background: url(/images/what01.png) no-repeat;
   background-size: cover;
 }
-#what-img2 {
+.what-img2 {
   background: url(/images/what02.png) no-repeat;
   background-size: cover;
 }
-#what-img3 {
+.what-img3 {
   background: url(/images/what03.png) no-repeat;
   background-size: cover;
 }
-#what-img4 {
+.what-img4 {
   background: url(/images/what04.png) no-repeat;
   background-size: cover;
 }
