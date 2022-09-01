@@ -1,3 +1,6 @@
+.map-bg {
+  z-index: -2;
+}
 .map-inner-text {
   position: absolute;
   color: #a10136;
@@ -33,7 +36,7 @@
 .mexico-text li,
 .kenya-text li,
 .czech-text li {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   font-family: "Arial", Helvetica, sans-serif;
   line-height: 150%;
@@ -82,18 +85,7 @@
   width: 3px;
   height: 14.3%;
 }
-#ko-line::after {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: #fff;
-  border: 1px solid #a10136;
-  position: absolute;
-  bottom: -5px;
-  left: -5px;
-}
+
 .ko-text {
   top: 5%;
   left: 48%;
@@ -107,9 +99,9 @@
 
 #line_1to2 {
   position: absolute;
-  width: 33%;
-  top: 27.5%;
-  left: 8.5%;
+  width: 32.8%;
+  top: 27.8%;
+  left: 9.2%;
 }
 #france1 {
   width: 3.6%;
@@ -135,8 +127,8 @@
 }
 #france-line1 {
   top: 35.5%;
-  left: 9%;
-  width: 4.2%;
+  left: 9.3%;
+  width: 4%;
   height: 3px;
 }
 #france-line2 {
@@ -145,26 +137,15 @@
   width: 3px;
   height: 32.8%;
 }
-#france-line1::after {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: #fff;
-  border: 1px solid #a10136;
-  position: absolute;
-  bottom: -4px;
-  left: 0px;
-}
+
 .france-text {
   top: 64%;
   left: 20%;
 }
 #line_2to3 {
   position: absolute;
-  width: 33%;
-  top: 35.5%;
+  width: 33.5%;
+  top: 36.3%;
   left: 10%;
 }
 #aust1 {
@@ -195,28 +176,15 @@
   width: 6%;
   height: 3px;
 }
-#aust-line::after {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: #fff;
-  border: 1px solid #a10136;
-  position: absolute;
-  bottom: 15px;
-  left: -90px;
-  z-index: 1;
-}
 .aust-text {
   top: 69.7%;
   left: 65%;
 }
 #line_3to4 {
-  width: 4.2%;
+  width: 3.6%;
   position: absolute;
-  top: 50.5%;
-  left: 40.3%;
+  top: 50.7%;
+  left: 40.4%;
   z-index: 999;
 }
 #taiwan1 {
@@ -472,9 +440,9 @@
 }
 #grade12_line_2to3 {
   position: absolute;
-  width: 56.9%;
-  top: 42.5%;
-  right: 24.5%;
+  width: 57.5%;
+  top: 43.5%;
+  right: 24%;
 }
 
 #mexico1 {
@@ -502,13 +470,13 @@
 #mexico-line1 {
   width: 19%;
   height: 3px;
-  top: 50%;
+  top: 51%;
   right: 24%;
 }
 #mexico-line2 {
   width: 3px;
-  height: 7%;
-  top: 50%;
+  height: 5.6%;
+  top: 51%;
   right: 43%;
 }
 .mexico-text {
@@ -541,15 +509,15 @@
 }
 #kenya-line1 {
   width: 3px;
-  height: 16%;
-  top: 65.5%;
-  left: 18%;
+  height: 17.3%;
+  top: 64.2%;
+  left: 18.2%;
 }
 #kenya-line2 {
   width: 4%;
   height: 3px;
   top: 81.5%;
-  left: 18%;
+  left: 18.2%;
 }
 .kenya-text {
   position: absolute;
@@ -558,9 +526,9 @@
 }
 #grade12_line_3to4 {
   position: absolute;
-  width: 6.8%;
-  top: 35%;
-  left: 12.3%;
+  width: 6.9%;
+  top: 34.4%;
+  left: 12.2%;
 }
 /* czech */
 #czech1 {
@@ -601,4 +569,77 @@
   height: 3px;
   top: 15.7%;
   left: 12%;
+}
+
+.kodot {
+  position: absolute;
+  width: 10px;
+  top: 40.4%;
+  left: 41.4%;
+}
+.francedot {
+  position: absolute;
+  width: 10px;
+  top: 35%;
+  left: 9%;
+}
+.austdot {
+  position: absolute;
+  width: 10px;
+  top: 75.5%;
+  left: 43.3%;
+}
+.italydot {
+  position: absolute;
+  width: 10px;
+  top: 36%;
+  left: 10.8%;
+}
+.uaedot {
+  position: absolute;
+  width: 10px;
+  top: 49.4%;
+  left: 22.2%;
+}
+.malaydot {
+  position: absolute;
+  width: 10px;
+  top: 60.9%;
+  left: 37.8%;
+}
+.israedot {
+  position: absolute;
+  width: 10px;
+  top: 45.4%;
+  left: 16.8%;
+}
+#grade12_line_1to2 {
+  position: absolute;
+  width: 0.8%;
+  top: 42%;
+  right: 24%;
+}
+.mexicodot1 {
+  position: absolute;
+  width: 10px;
+  top: 41.8%;
+  right: 24%;
+}
+.mexicodot2 {
+  position: absolute;
+  width: 10px;
+  top: 50.6%;
+  right: 23.6%;
+}
+.kenyadot {
+  position: absolute;
+  width: 10px;
+  top: 63.5%;
+  left: 18%;
+}
+.czechdot {
+  position: absolute;
+  width: 10px;
+  top: 33.5%;
+  left: 11.8%;
 }

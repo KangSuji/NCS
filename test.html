@@ -25,11 +25,20 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
       </div>
+      <button>lili</button>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
     
     
     
       <!-- Initialize Swiper -->
       <script type="module">
+        $('button').click(function() {
+          $('ul li').slideUp();
+        });
         
         var swiper = new Swiper('.swiper', {
           effect: 'coverflow',
