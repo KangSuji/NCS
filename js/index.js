@@ -84,6 +84,7 @@ $(document).ready(function () {
     event.preventDefault();
     $(`.dep3-1 .dep2`).removeClass("on");
     $(`.dep3-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-down");
+    $(`.dep3-3 .dep3`).removeClass("on");
   });
 
   //dep3
@@ -216,6 +217,11 @@ $(document).ready(function () {
       $(`#img${i}`).css({ background: `url(./images/grade10_${i}.jpg)` });
       $(`#img${i} .img-dim-text`).text(img1Arr[i - 1]);
     }
+
+    $("#g-10").css({ display: "block" });
+    $("#g-11").css({ display: "none" });
+    $("#g-12").css({ display: "none" });
+    $(".map-tit").text("Take a glance: Grade 10");
   });
   $("#Grade11").click(function () {
     $("#img1").css("animation-play-state", "running");
@@ -231,6 +237,10 @@ $(document).ready(function () {
     $("#img1").css({
       animation: "zoom-out 1s linear",
     });
+    $("#g-11").css({ display: "block" });
+    $("#g-10").css({ display: "none" });
+    $("#g-12").css({ display: "none" });
+    $(".map-tit").text("Take a glance: Grade 11");
   });
   $("#Grade12").click(function () {
     $("#img1").css("animation-play-state", "running");
@@ -243,6 +253,10 @@ $(document).ready(function () {
       $(`#img${i}`).css({ background: `url(./images/grade12_${i}.jpg)` });
       $(`#img${i} .img-dim-text`).text(img3Arr[i - 1]);
     }
+    $("#g-12").css({ display: "block" });
+    $("#g-10").css({ display: "none" });
+    $("#g-11").css({ display: "none" });
+    $(".map-tit").text("Take a glance: Grade 12");
   });
   //grade 버튼 색상
   if ($("#Grade10").hasClass("btnActive")) {
@@ -253,14 +267,14 @@ $(document).ready(function () {
     }
   }
 
-  for (let i = 1; i < 5; i++) {
-    $(`#img${i}`).mouseenter(function () {
-      $(`#img${i} .img-dim`).css({ visibility: "visible" });
-    });
-    $(`#img${i}`).mouseleave(function () {
-      $(`#img${i} .img-dim`).css({ visibility: "hidden" });
-    });
-  }
+  // for (let i = 1; i < 5; i++) {
+  //   $(`#img${i}`).mouseenter(function () {
+  //     $(`#img${i} .img-dim`).css({ visibility: "visible" });
+  //   });
+  //   $(`#img${i}`).mouseleave(function () {
+  //     $(`#img${i} .img-dim`).css({ visibility: "hidden" });
+  //   });
+  // }
 
   //what's on 슬라이드
   $(".what-img-wrap").slick({

@@ -249,12 +249,12 @@
       <div class="content">
         <section class="main-visual">
           <div class="maim-visual-content">
-            <div class="videoWrap" style="position:relative; width: 100%; height: 100%; overflow: hidden;">
+            <!-- <div class="videoWrap" style="position:relative; width: 100%; height: 100%; overflow: hidden;">
               <div class="main-clean-video-bg pc">
                 <iframe src="https://player.vimeo.com/video/745220383?h=72be717410?autopause=0&amp;transparent=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" title="ncs 비즈니스.mp4" data-ready="true"></iframe>
               </div>
               <div style='width:100%;height:100%;position:absolute;top:0;left:0;'></div>
-            </div>
+            </div> -->
             <!-- <span class="main-visual-text01">NEXT CHALLENGE SCHOOL</span>
             <span class="main-visual-text02">TRIP AROUND THE WORLD</span> -->
           </div>
@@ -263,7 +263,12 @@
           </div>
         </section>
         <style>
-          .main-clean-video-bg {position:relative; width: 100%; height: 100%; overflow: hidden;}
+          .main-clean-video-bg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
           .main-clean-video-bg iframe {
             width: 110vw;
             height: 80vw;
@@ -272,59 +277,60 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
           }
-    
-          @media (max-width:1712px){	
+
+          @media (max-width: 1712px) {
             .main-clean-video-bg.pc iframe {
               width: 180vw;
               min-height: 149vh;
             }
           }
-    
-          @media (max-width:1570px){	
+
+          @media (max-width: 1570px) {
             .main-clean-video-bg.tab iframe {
               width: 180vw;
               min-height: 149vh;
             }
           }
-    
-          @media (max-width:1024px){	
+
+          @media (max-width: 1024px) {
             .main-clean-video-bg.tab iframe {
               width: 110vw;
               min-height: 149vh;
             }
           }
-    
-          @media (max-width:800px){	
+
+          @media (max-width: 800px) {
             .main-clean-video-bg.tab iframe {
               width: 180vw;
               min-height: 160vh;
             }
           }
-    
-          @media (max-width:780px){	
+
+          @media (max-width: 780px) {
             .main-clean-video-bg.mobile iframe {
               width: 100vw;
               min-height: 190vh;
             }
           }
-    
-          @media (max-width:600px){	
+
+          @media (max-width: 600px) {
             .main-clean-video-bg.mobile iframe {
               width: 118vw;
               min-height: 146vh;
             }
           }
-    
-          @media (max-width:500px){	
+
+          @media (max-width: 500px) {
             .main-clean-video-bg.mobile iframe {
               width: 100vw;
               min-height: 136vh;
             }
           }
-    
         </style>
+        <div id="curved-corner-bottomleft" style="float: left"></div>
+        <div id="curved-corner-bottomright" style="float: right"></div>
         <section class="main-slide">
           <div class="main-slide_wrap">
             <div class="slide-right">
@@ -336,7 +342,10 @@
                       <div class="imgText">JUL / AUG / SEP</div>
                       <div class="img-dim">
                         <div class="img-dim-text"></div>
-                        <div class="next dim-next"></div>
+                        <span class="dimarr">
+                          <span class="dimPrev"></span>
+                          <span class="dimNext"></span>
+                        </span>
                       </div>
                     </div>
                     <div class="swiper-slide" id="img2" style="width: 480px">
@@ -344,7 +353,6 @@
                       <div class="imgText">OCT / NOV / DEC</div>
                       <div class="img-dim">
                         <div class="img-dim-text"></div>
-                        <div class="next dim-next"></div>
                       </div>
                     </div>
                     <div class="swiper-slide" id="img3" style="width: 480px">
@@ -352,15 +360,6 @@
                       <div class="imgText">JAN / FEB / MAR</div>
                       <div class="img-dim">
                         <div class="img-dim-text"></div>
-                        <div class="next dim-next"></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide" id="img4" style="width: 480px">
-                      <div class="imgNum">Term 04</div>
-                      <div class="imgText">APR / MAY / JUN</div>
-                      <div class="img-dim">
-                        <div class="img-dim-text"></div>
-                        <div class="next dim-next"></div>
                       </div>
                     </div>
                   </div>
@@ -384,206 +383,208 @@
             <div class="map-tit">Take a glance: Grade 10</div>
           </div>
         </section>
-        <!-- grade10 -->
-        <div class="map-img-wrap">
-          <img src="/images/map/grade10_map/map_bg.svg" class="map-bg" />
-          <!-- korea -->
-          <img src="/images/map/grade10_map/korea_area.svg" id="ko1" />
-          <img src="./images/map/map_point.svg" class="kodot" />
-          <span id="ko-line" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/korea_icon.svg" id="ko2" />
-          <img src="./images/map/grade10_map/circle_dot.svg" id="ko3" class="map-inner-circle" />
-          <div class="ko-text map-inner-text">
-            <img src="./images/map/grade10_map/korea_flag.png" id="ko4" />
-            <span class="map-inner-text1">1. KOREA</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>July</li>
-            <li>August</li>
-            <li>September</li>
-          </div>
-          <img src="./images/map/grade10_map/line_1to2.svg" id="line_1to2" />
+        <div class="wrap2">
+          <!-- grade10 -->
+          <div class="map-img-wrap" id="g-10">
+            <img src="/images/map/grade10_map/map_bg.svg" class="map-bg" />
+            <!-- korea -->
+            <img src="/images/map/grade10_map/korea_area.svg" id="ko1" />
+            <img src="./images/map/map_point.svg" class="kodot" />
+            <span id="ko-line" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/korea_icon.svg" id="ko2" />
+            <img src="./images/map/grade10_map/circle_dot.svg" id="ko3" class="map-inner-circle" />
+            <div class="ko-text map-inner-text">
+              <img src="./images/map/grade10_map/korea_flag.png" id="ko4" />
+              <span class="map-inner-text1">1. KOREA</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>July</li>
+              <li>August</li>
+              <li>September</li>
+            </div>
+            <img src="./images/map/grade10_map/line_1to2.svg" id="line_1to2" />
 
-          <img src="./images/map/grade10_map/france_area.svg" id="france1" />
-          <img src="./images/map/map_point.svg" class="francedot" />
-          <span id="france-line1" class="map-inner-line"></span>
-          <span id="france-line2" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/france_icon.svg" id="france2" />
-          <img src="./images/map/grade10_map/circle_dot.svg" id="france3" class="map-inner-circle" />
-          <div class="france-text map-inner-text">
-            <img src="./images/map/grade10_map/france_flag.png" id="france4" />
-            <span class="map-inner-text1">2. FRANCE</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>October</li>
-            <li>November</li>
-            <li>December</li>
-          </div>
-          <img src="./images/map/grade10_map/line_2to3.svg" id="line_2to3" />
+            <img src="./images/map/grade10_map/france_area.svg" id="france1" />
+            <img src="./images/map/map_point.svg" class="francedot" />
+            <span id="france-line1" class="map-inner-line"></span>
+            <span id="france-line2" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/france_icon.svg" id="france2" />
+            <img src="./images/map/grade10_map/circle_dot.svg" id="france3" class="map-inner-circle" />
+            <div class="france-text map-inner-text">
+              <img src="./images/map/grade10_map/france_flag.png" id="france4" />
+              <span class="map-inner-text1">2. FRANCE</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>October</li>
+              <li>November</li>
+              <li>December</li>
+            </div>
+            <img src="./images/map/grade10_map/line_2to3.svg" id="line_2to3" />
 
-          <img src="./images/map/grade10_map/aust_area.svg" id="aust1" />
-          <img src="./images/map/map_point.svg" class="austdot" />
-          <span id="aust-line" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/aust_icon.svg" id="aust2" />
-          <img src="./images/map/grade10_map/circle_dot.svg" id="aust3" class="map-inner-circle" />
+            <img src="./images/map/grade10_map/aust_area.svg" id="aust1" />
+            <img src="./images/map/map_point.svg" class="austdot" />
+            <span id="aust-line" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/aust_icon.svg" id="aust2" />
+            <img src="./images/map/grade10_map/circle_dot.svg" id="aust3" class="map-inner-circle" />
 
-          <div class="aust-text map-inner-text">
-            <img src="./images/map/grade10_map/aust_flag.svg" id="aust4" />
-            <span class="map-inner-text1">3. AUSTRALIA</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>January</li>
-            <li>Febuary</li>
-            <li>March</li>
-          </div>
-          <img src="./images/map/grade10_map/line_3to4.svg" id="line_3to4" />
-          <img src="./images/map/grade10_map/taiwan_area.svg" id="taiwan1" />
-          <span id="taiwan-line" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/taiwan_icon.svg" id="taiwan2" />
-          <img src="./images/map/grade10_map/circle_dot.svg" id="taiwan3" class="map-inner-circle" />
-          <div class="taiwan-text map-inner-text">
-            <img src="./images/map/grade10_map/taiwan_flag.png" id="taiwan4" />
-            <span class="map-inner-text1">4. TAIWAN</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>April</li>
-            <li>May</li>
-            <li>June</li>
-          </div>
-        </div>
-
-        <!-- grade11 map -->
-        <div class="map-img-wrap">
-          <img src="/images/map/grade10_map/map_bg.svg" />
-          <!-- italy -->
-          <img src="/images/map/grade11_map/italy_area.svg" id="italy1" />
-          <img src="/images/map/grade11_map/italy_icon.svg" id="italy2" />
-          <span id="italy-line1" class="map-inner-line"></span>
-          <span id="italy-line2" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/circle_dot.svg" id="italy3" class="map-inner-circle" />
-          <img src="/images/map/grade11_map/line_1to2.svg" id="grade11-line_1to2" />
-          <img src="./images/map/map_point.svg" class="italydot" />
-          <div class="italy-text map-inner-text">
-            <img src="/images/map/grade11_map/italy_flag.png" id="italy4" />
-            <span class="map-inner-text1">1. ITALY</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>July</li>
-            <li>August</li>
-            <li>September</li>
-          </div>
-          <!-- UAE -->
-          <img src="./images/map/grade11_map/uae_area.svg" id="uae1" />
-          <img src="./images/map/grade11_map/uae_icon.svg" id="uae2" />
-          <span id="uae-line1" class="map-inner-line"></span>
-          <span id="uae-line2" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/circle_dot.svg" id="uae3" class="map-inner-circle" />
-          <img src="/images/map/grade11_map/line_2to3.svg" id="grade11-line_2to3" />
-          <img src="./images/map/map_point.svg" class="uaedot" />
-          <div class="uae-text map-inner-text">
-            <img src="./images/map/grade11_map/uae_flag.png" id="uae4" />
-            <span class="map-inner-text1">2. UAE</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>October</li>
-            <li>November</li>
-            <li>December</li>
-          </div>
-          <!-- malaysia -->
-          <img src="./images/map/grade11_map/malay_area.svg" id="malay1" />
-          <img src="./images/map/grade11_map/malay_icon.svg" id="malay2" />
-          <span id="malay-line1" class="map-inner-line"></span>
-          <span id="malay-line2" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/circle_dot.svg" id="malay3" class="map-inner-circle" />
-          <img src="/images/map/grade11_map/line_3to4.svg" id="grade11-line_3to4" />
-          <img src="./images/map/map_point.svg" class="malaydot" />
-
-          <div class="malay-text map-inner-text">
-            <img src="./images/map/grade11_map/malay_flag.png" id="malay4" />
-            <span class="map-inner-text1">3. MALAYSIA</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>January</li>
-            <li>Febuary</li>
-            <li>March</li>
+            <div class="aust-text map-inner-text">
+              <img src="./images/map/grade10_map/aust_flag.svg" id="aust4" />
+              <span class="map-inner-text1">3. AUSTRALIA</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>January</li>
+              <li>Febuary</li>
+              <li>March</li>
+            </div>
+            <img src="./images/map/grade10_map/line_3to4.svg" id="line_3to4" />
+            <img src="./images/map/grade10_map/taiwan_area.svg" id="taiwan1" />
+            <span id="taiwan-line" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/taiwan_icon.svg" id="taiwan2" />
+            <img src="./images/map/grade10_map/circle_dot.svg" id="taiwan3" class="map-inner-circle" />
+            <div class="taiwan-text map-inner-text">
+              <img src="./images/map/grade10_map/taiwan_flag.png" id="taiwan4" />
+              <span class="map-inner-text1">4. TAIWAN</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>April</li>
+              <li>May</li>
+              <li>June</li>
+            </div>
           </div>
 
-          <!-- israel -->
-          <img src="./images/map/grade11_map/israel_area.svg" id="israel1" />
-          <img src="./images/map/grade11_map/israel_icon.svg" id="israel2" />
-          <span id="israel-line1" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/circle_dot.svg" id="israel3" class="map-inner-circle" />
+          <!-- grade11 map -->
+          <div class="map-img-wrap" id="g-11">
+            <img src="/images/map/grade10_map/map_bg.svg" />
+            <!-- italy -->
+            <img src="/images/map/grade11_map/italy_area.svg" id="italy1" />
+            <img src="/images/map/grade11_map/italy_icon.svg" id="italy2" />
+            <span id="italy-line1" class="map-inner-line"></span>
+            <span id="italy-line2" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/circle_dot.svg" id="italy3" class="map-inner-circle" />
+            <img src="/images/map/grade11_map/line_1to2.svg" id="grade11-line_1to2" />
+            <img src="./images/map/map_point.svg" class="italydot" />
+            <div class="italy-text map-inner-text">
+              <img src="/images/map/grade11_map/italy_flag.png" id="italy4" />
+              <span class="map-inner-text1">1. ITALY</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>July</li>
+              <li>August</li>
+              <li>September</li>
+            </div>
+            <!-- UAE -->
+            <img src="./images/map/grade11_map/uae_area.svg" id="uae1" />
+            <img src="./images/map/grade11_map/uae_icon.svg" id="uae2" />
+            <span id="uae-line1" class="map-inner-line"></span>
+            <span id="uae-line2" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/circle_dot.svg" id="uae3" class="map-inner-circle" />
+            <img src="/images/map/grade11_map/line_2to3.svg" id="grade11-line_2to3" />
+            <img src="./images/map/map_point.svg" class="uaedot" />
+            <div class="uae-text map-inner-text">
+              <img src="./images/map/grade11_map/uae_flag.png" id="uae4" />
+              <span class="map-inner-text1">2. UAE</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>October</li>
+              <li>November</li>
+              <li>December</li>
+            </div>
+            <!-- malaysia -->
+            <img src="./images/map/grade11_map/malay_area.svg" id="malay1" />
+            <img src="./images/map/grade11_map/malay_icon.svg" id="malay2" />
+            <span id="malay-line1" class="map-inner-line"></span>
+            <span id="malay-line2" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/circle_dot.svg" id="malay3" class="map-inner-circle" />
+            <img src="/images/map/grade11_map/line_3to4.svg" id="grade11-line_3to4" />
+            <img src="./images/map/map_point.svg" class="malaydot" />
 
-          <div class="israel-text map-inner-text">
-            <img src="./images/map/grade11_map/israel_flag.png" id="israel4" />
-            <span class="map-inner-text1">4. ISRAEL</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>April</li>
-            <li>May</li>
-            <li>June</li>
-          </div>
-        </div>
-        <!-- grade12 map -->
-        <div class="map-img-wrap">
-          <img src="/images/map/grade10_map/map_bg.svg" />
-          <!-- USA -->
-          <img src="/images/map/grade12_map/usa_area2.png" id="usa1" />
-          <img src="/images/map/grade12_map/usa_icon.svg" id="usa2" />
-          <span id="usa-line1" class="map-inner-line"></span>
-          <span id="usa-line2" class="map-inner-line"></span>
-          <span id="usa-line3" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/circle_dot.svg" id="usa3" class="map-inner-circle" />
+            <div class="malay-text map-inner-text">
+              <img src="./images/map/grade11_map/malay_flag.png" id="malay4" />
+              <span class="map-inner-text1">3. MALAYSIA</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>January</li>
+              <li>Febuary</li>
+              <li>March</li>
+            </div>
 
-          <div class="usa-text map-inner-text">
-            <img src="/images/map/grade12_map/usa_flag.svg" id="usa4" />
-            <span class="map-inner-text1">1. USA</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>July</li>
-            <li>August</li>
-            <li>September</li>
+            <!-- israel -->
+            <img src="./images/map/grade11_map/israel_area.svg" id="israel1" />
+            <img src="./images/map/grade11_map/israel_icon.svg" id="israel2" />
+            <span id="israel-line1" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/circle_dot.svg" id="israel3" class="map-inner-circle" />
+            <img src="./images/map/map_point.svg" class="israedot" />
+            <div class="israel-text map-inner-text">
+              <img src="./images/map/grade11_map/israel_flag.png" id="israel4" />
+              <span class="map-inner-text1">4. ISRAEL</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>April</li>
+              <li>May</li>
+              <li>June</li>
+            </div>
           </div>
-          <img src="/images/map/grade12_map/mexico_area2.png" id="mexico1" />
-          <img src="/images/map/grade12_map/mexico_icon.svg" id="mexico2" />
-          <img src="./images/map/map_point.svg" class="mexicodot1" />
-          <img src="./images/map/map_point.svg" class="mexicodot2" />
-          <span id="mexico-line1" class="map-inner-line"></span>
-          <span id="mexico-line2" class="map-inner-line"></span>
+          <!-- grade12 map -->
+          <div class="map-img-wrap" id="g-12">
+            <img src="/images/map/grade10_map/map_bg.svg" />
+            <!-- USA -->
+            <img src="/images/map/grade12_map/usa_area2.png" id="usa1" />
+            <img src="/images/map/grade12_map/usa_icon.svg" id="usa2" />
+            <span id="usa-line1" class="map-inner-line"></span>
+            <span id="usa-line2" class="map-inner-line"></span>
+            <span id="usa-line3" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/circle_dot.svg" id="usa3" class="map-inner-circle" />
 
-          <img src="./images/map/grade12_map/line_1to2.svg" id="grade12_line_1to2" />
-          <img src="./images/map/grade10_map/circle_dot.svg" id="mexico3" class="map-inner-circle" />
-          <img src="./images/map/grade12_map/line_2to3.svg" id="grade12_line_2to3" />
+            <div class="usa-text map-inner-text">
+              <img src="/images/map/grade12_map/usa_flag.svg" id="usa4" />
+              <span class="map-inner-text1">1. USA</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>July</li>
+              <li>August</li>
+              <li>September</li>
+            </div>
+            <img src="/images/map/grade12_map/mexico_area2.png" id="mexico1" />
+            <img src="/images/map/grade12_map/mexico_icon.svg" id="mexico2" />
+            <img src="./images/map/map_point.svg" class="mexicodot1" />
+            <img src="./images/map/map_point.svg" class="mexicodot2" />
+            <span id="mexico-line1" class="map-inner-line"></span>
+            <span id="mexico-line2" class="map-inner-line"></span>
 
-          <div class="mexico-text map-inner-text">
-            <img src="/images/map/grade12_map/mexico_flag.png" id="mexico4" />
-            <span class="map-inner-text1">2. MEXICO</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>October</li>
-            <li>November</li>
-            <li>December</li>
-          </div>
-          <!-- kenya -->
-          <img src="/images/map/grade12_map/kenya_area.svg" id="kenya1" />
-          <img src="/images/map/grade12_map/kenya_icon.svg" id="kenya2" />
-          <img src="./images/map/map_point.svg" class="kenyadot" />
-          <span id="kenya-line1" class="map-inner-line"></span>
-          <span id="kenya-line2" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/circle_dot.svg" id="kenya3" class="map-inner-circle" />
-          <img src="./images/map/grade12_map/line_3to4.svg" id="grade12_line_3to4" />
-          <div class="kenya-text map-inner-text">
-            <img src="/images/map/grade12_map/kenya_flag.png" id="kenya4" />
-            <span class="map-inner-text1">3. KENYA</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>January</li>
-            <li>Febuary</li>
-            <li>March</li>
-          </div>
-          <!-- CZECH -->
-          <img src="/images/map/grade12_map/czech_area.svg" id="czech1" />
-          <img src="/images/map/grade12_map/czech_icon.svg" id="czech2" />
-          <img src="./images/map/map_point.svg" class="czechdot" />
-          <span id="czech-line1" class="map-inner-line"></span>
-          <span id="czech-line2" class="map-inner-line"></span>
-          <img src="./images/map/grade10_map/circle_dot.svg" id="czech3" class="map-inner-circle" />
-          <div class="czech-text map-inner-text">
-            <img src="/images/map/grade12_map/czech_flag.png" id="czech4" />
-            <span class="map-inner-text1">4. CZECH</span><br />
-            <span class="map-inner-text2">8 weeks</span>
-            <li>April</li>
-            <li>May</li>
-            <li>June</li>
+            <img src="./images/map/grade12_map/line_1to2.svg" id="grade12_line_1to2" />
+            <img src="./images/map/grade10_map/circle_dot.svg" id="mexico3" class="map-inner-circle" />
+            <img src="./images/map/grade12_map/line_2to3.svg" id="grade12_line_2to3" />
+
+            <div class="mexico-text map-inner-text">
+              <img src="/images/map/grade12_map/mexico_flag.png" id="mexico4" />
+              <span class="map-inner-text1">2. MEXICO</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>October</li>
+              <li>November</li>
+              <li>December</li>
+            </div>
+            <!-- kenya -->
+            <img src="/images/map/grade12_map/kenya_area.svg" id="kenya1" />
+            <img src="/images/map/grade12_map/kenya_icon.svg" id="kenya2" />
+            <img src="./images/map/map_point.svg" class="kenyadot" />
+            <span id="kenya-line1" class="map-inner-line"></span>
+            <span id="kenya-line2" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/circle_dot.svg" id="kenya3" class="map-inner-circle" />
+            <img src="./images/map/grade12_map/line_3to4.svg" id="grade12_line_3to4" />
+            <div class="kenya-text map-inner-text">
+              <img src="/images/map/grade12_map/kenya_flag.png" id="kenya4" />
+              <span class="map-inner-text1">3. KENYA</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>January</li>
+              <li>Febuary</li>
+              <li>March</li>
+            </div>
+            <!-- CZECH -->
+            <img src="/images/map/grade12_map/czech_area.svg" id="czech1" />
+            <img src="/images/map/grade12_map/czech_icon.svg" id="czech2" />
+            <img src="./images/map/map_point.svg" class="czechdot" />
+            <span id="czech-line1" class="map-inner-line"></span>
+            <span id="czech-line2" class="map-inner-line"></span>
+            <img src="./images/map/grade10_map/circle_dot.svg" id="czech3" class="map-inner-circle" />
+            <div class="czech-text map-inner-text">
+              <img src="/images/map/grade12_map/czech_flag.png" id="czech4" />
+              <span class="map-inner-text1">4. CZECH</span><br />
+              <span class="map-inner-text2">8 weeks</span>
+              <li>April</li>
+              <li>May</li>
+              <li>June</li>
+            </div>
           </div>
         </div>
         <section class="what">
