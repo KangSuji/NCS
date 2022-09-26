@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+  
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="logo">
+          <a href="/"><img src="./images/logo_wht2.png" /></a>
+        </div>
+        <div class="util">
+          <span class="search">
+            <img src="./images/search_icon.png" />
+            <span class="searchText">search</span>
+          </span>
+          <span class="hamburger"></span>
+        </div>
+      </header>
+      <div class="header-search">
+        <img src="./images/close_btn.gif" class="closeBtn" />
+        <div class="header-input-area">
+          <input type="text" onfocus="this.placeholder=''" onblur="this.placeholder='Search...'" placeholder="Search..." />
+          <img src="./images/search_icon.png" />
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <div class="nav-wrap">
+          <span class="hamburgerX">
+            <span class="lnr lnr-cross"></span>
+          </span>
+          <div class="nav-top">
+            <a href="/"><div class="nav-top_text">Home</div></a>
+          </div>
+
+          <div class="nav-bottom">
+            <ul class="dep1">
+              <li class="dep1-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">About</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Greetings</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Mission, Vision and Values</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Accreditation and Memberships</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">History</a>
+                    <span class="dep2-sub-tit">step 1 ~ step 5</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Our People</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Career Opportunities</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Contact</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep2-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Admissions</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Overview</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Important Dates & Deadlines</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Apply</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Tuition & Financial Aid</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Meet the Admissions Team</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Events</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep3-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Academics</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li class="dep3-3">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">Curriculum</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-3"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Overview</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Capstone Project</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Graduation Requirements</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">NEXT META</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">College Counseling</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-4"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Dual Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Project Based Learning</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Counseling</a>
+                        <span class="dep2-sub-tit">grade10 ~ 12</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">College Acceptances</a>
+                        <span class="dep2-sub-tit">by country</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <a href="javascript:void(0)" class="no-line">Academic Calendar</a>
+                  </li>
+                  <li class="dep3-5">
+                    <a href="javascript:void(0)" class="no-line">School Profile</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep4-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Student Life</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Living Abroad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Diversity</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Clubs & Sports</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Outreach</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Spiritual Life</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Guest Speakers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dep5-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title" class="no-line">Global Experiences</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Experiential Learning</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Host Countries</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Safety & Security</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="login">Login</div>
+        </div>
+      </nav>
+      <div class="nav-dim"></div>
+
+<div class="content">
+
+  <section class="main-visual">
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<div class="videoWrap" style="position:relative; width: 100%; height: 100%; overflow: hidden;">
+			<div class="main-clean-video-bg pc">      
+      <iframe src="https://player.vimeo.com/video/747218466?h=c3aade5823?autopause=0&amp;transparent=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" title="ncs 비즈니스.mp4" data-ready="true"></iframe>
+			</div>
+		</div>
+    <div class="bounce">
+      <img src="images/sec02_arr.png" />
+    </div>
+  </section>
+	<div style='width:100%;height:100vh'></div>
+	<style>
+			.main-clean-video-bg {position:relative; width: 100%; height: 100%; overflow: hidden;}
+			.main-clean-video-bg iframe {
+				width: 110vw;
+				height: 80vw;
+				min-height: 80vh;
+				min-width: 100vh;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+
+			@media (max-width:1712px){	
+				.main-clean-video-bg.pc iframe {
+					width: 180vw;
+					min-height: 149vh;
+				}
+			}
+
+			@media (max-width:1570px){	
+				.main-clean-video-bg.tab iframe {
+					width: 180vw;
+					min-height: 149vh;
+				}
+			}
+
+			@media (max-width:1024px){	
+				.main-clean-video-bg.tab iframe {
+					width: 110vw;
+					min-height: 149vh;
+				}
+			}
+
+			@media (max-width:800px){	
+				.main-clean-video-bg.tab iframe {
+					width: 180vw;
+					min-height: 160vh;
+				}
+			}
+
+			@media (max-width:780px){	
+				.main-clean-video-bg.mobile iframe {
+					width: 100vw;
+					min-height: 190vh;
+				}
+			}
+
+			@media (max-width:600px){	
+				.main-clean-video-bg.mobile iframe {
+					width: 118vw;
+					min-height: 146vh;
+				}
+			}
+
+			@media (max-width:500px){	
+				.main-clean-video-bg.mobile iframe {
+					width: 100vw;
+					min-height: 136vh;
+				}
+			}
+
+	</style>
+	<div id="curved-corner-bottomleft" style="float: left"></div>
+  <div id="curved-corner-bottomright" style="float: right"></div>
+  <section class="main-slide">
+    <div class="main-slide_wrap">
+      <div class="slide-right">
+        <div class="slide-left">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="img1">
+                <div class="imgText">Trimester1</div>
+								<div class="img-dim">
+									<div class="img-dim-text"></div>
+									<span class="dimarr">
+											<span class="dimPrev"></span>
+                      <span class="dimNext"></span>
+                    </span>
+                </div>
+              </div>
+              <div class="swiper-slide" id="img2" style="width: 480px;">
+                
+                <div class="imgText">Trimester2</div>
+								<div class="img-dim">
+									<div class="img-dim-text"></div>
+                  <span class="dimarr">
+											<span class="dimPrev"></span>
+                      <span class="dimNext"></span>
+                    </span>
+                </div>
+              </div>
+              <div class="swiper-slide" id="img3" style="width: 480px;">
+               
+                <div class="imgText">Trimester3</div>
+								<div class="img-dim">
+                  <div class="img-dim-text"></div>
+                   <span class="dimarr">
+											<span class="dimPrev"></span>
+                      <span class="dimNext"></span>
+                    </span>
+                 </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="img-pagination"></div>
+        </div>
+        <div class="right-text">
+          Global<br />
+          Experiences<br />
+          Host Countries
+        </div>
+        <div class="right-text-shadow">
+          Global<br />
+          Experiences<br />
+          Host Countries
+        </div>
+        <span class="line-1"></span>
+        <div class="btn_wrap">
+          <div class="grade_btn btnActive" id="Grade10">Grade 10</div>
+          <div class="grade_btn" id="Grade11">Grade 11</div>
+          <div class="grade_btn" id="Grade12">Grade 12</div>
+        </div>
+        <span class="right-bottom-text">*Visiting countries are subject to change due to conflict, natural disasters, travel restrictions, etc.</span>
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <div class="map-wrap">
+      <div class="map-tit">Take a glance: Grade 10</div>
+    </div>
+  </section>
+	
+	<div class="wrap2">
+		<div class="map-img-wrap" id="g-10">
+			<img src="/images/map/grade10_map/map_bg.svg" class="map-bg" />
+
+			<!-- korea -->
+			<img src="/images/map/grade10_map/korea_area.svg" id="ko1" class="dn" />
+			
+			<span id="ko-line" class="map-inner-line dn" style="height: 0;"></span>
+			<img src="./images/map/grade10_map/korea_icon.svg" id="ko2" class="dn" />
+			<img src="./images/map/grade10_map/circle_dot.svg" id="ko3" class="map-inner-circle dn rotate01" />
+			<div class="ko-text map-inner-text dn">
+				<p class="map-inner-text2">Trimester 1</p>
+				<p class="map-inner-text1">KOREA</p>
+				<img src="./images/map/grade10_map/korea_flag.png" class="flag" />
+			</div>
+
+			<img src="./images/map/grade10_map/france_area.svg" id="france1" class="dn" />
+			
+			<span id="france-line1" class="map-inner-line dn" style="width: 0;"></span>
+			<span id="france-line2" class="map-inner-line dn" style="height: 0;"></span>
+			<img src="./images/map/grade10_map/france_icon.svg" id="france2" class="dn" />
+			<img src="./images/map/grade10_map/circle_dot.svg" id="france3" class="map-inner-circle dn rotate01" />
+
+			<div class="france-text map-inner-text dn">
+				<p class="map-inner-text2">Trimester 3</p>
+				<p class="map-inner-text1">France</p>
+				<img src="./images/map/grade10_map/france_flag.png" class="flag" />
+			</div>
+
+			<img src="./images/map/grade10_map/aust_area.svg" id="aust1" class="dn" />
+
+			
+			<span id="aust-line" class="map-inner-line dn" style="width: 0;"></span>
+			<img src="./images/map/grade10_map/aust_icon.svg" id="aust2" class="dn" />
+			<img src="./images/map/grade10_map/circle_dot.svg" id="aust3" class="map-inner-circle dn rotate01" />
+
+			<div class="aust-text map-inner-text dn">
+				<p class="map-inner-text2">Trimester 2</p>
+				<p class="map-inner-text1">australia</p>
+				<img src="./images/map/grade10_map/aust_flag.svg" class="flag" />
+			</div>
+
+			<div id="line_1to2">
+				<svg xmlns="http://www.w3.org/2000/svg" id="_이어_2" viewBox="0 0 48.25 226.67">
+					<defs>
+						<style>
+							.line_1to2 {
+								fill: none;
+								stroke: #a10136;
+								stroke-dasharray: 1000;
+								stroke-linecap: round;
+								stroke-linejoin: round;
+								stroke-dashoffset: 300;
+							}
+						</style>
+					</defs>
+					<path class="line_1to2 dn" d="M.37,.34S87.68,96.95,25.26,226.45" />
+				</svg>
+			</div>
+
+			<div id="line_2to3">
+				<svg xmlns="http://www.w3.org/2000/svg" id="_이어_2" viewBox="0 0 434 256.11">
+					<defs>
+						<style>
+							.line_2to3 {
+								fill: none;
+								stroke: #a10136;
+								stroke-dasharray: 1000;
+								stroke-linecap: round;
+								stroke-linejoin: round;
+								stroke-dashoffset: 300;
+							}
+						</style>
+					</defs>
+					<path class="line_2to3 dn" d="M.5,.57S369.5-11.06,433.5,255.61" />
+				</svg>
+			</div>
+
+			<img src="./images/map/map_point.svg" class="kodot dn" />
+			<img src="./images/map/map_point.svg" class="francedot dn" />
+			<img src="./images/map/map_point.svg" class="austdot dn" />
+		</div>
+
+		<!-- grade11 map -->
+		<div class="map-img-wrap" id="g-11">
+			<img src="/images/map/grade10_map/map_bg.svg" />
+
+			<!-- mexico -->
+			<img src="./images/map/new/mexico_area1.svg" id="mexico1" class="dn" />
+			<img src="./images/map/grade12_map/mexico_icon.svg" id="mexico2" class="dn" />
+
+			
+			<span id="mexico-line1" class="map-inner-line dn" style="width: 0;"></span>
+			<span id="mexico-line2" class="map-inner-line dn" style="height: 0;"></span>
+			<img src="./images/map/grade10_map/circle_dot.svg" id="mexico3" class="map-inner-circle dn rotate01" />
+
+			<div class="mexico-text map-inner-text dn">
+				<p class="map-inner-text2">Trimester 1</p>
+				<p class="map-inner-text1">mexico</p>
+				<img src="./images/map/grade12_map/mexico_flag.png" class="flag" />
+			</div>
+
+			<!-- israel -->
+			<img src="./images/map/grade11_map/israel_area.svg" id="israel1" class="dn" />
+			<img src="./images/map/grade11_map/israel_icon.svg" id="israel2" class="dn"/>
+
+			<span id="italy-line1" class="map-inner-line dn"style="width: 0;"></span>
+			<span id="italy-line2" class="map-inner-line dn"  style="height: 0;" ></span>
+
+			<img src="./images/map/grade10_map/circle_dot.svg" id="israel3" class="map-inner-circle dn rotate01" />
+			
+
+			<div class="israel-text map-inner-text dn">
+				<p class="map-inner-text2">Trimester 2</p>
+				<p class="map-inner-text1">israel</p>
+				<img src="./images/map/grade11_map/israel_flag.png" class="flag" />
+			</div>
+
+			<!-- thailand -->
+			<img src="./images/map/new/thai_area.svg" id="thai1" class="dn"  />
+			<img src="./images/map/new/thai_icon.svg" id="thai2" class="dn" />
+
+			
+			<span id="thai-line1" class="map-inner-line dn" style="width: 0;"></span>
+			<span id="thai-line2" class="map-inner-line dn" style="height: 0;"></span>
+			<img src="./images/map/grade10_map/circle_dot.svg" id="thai3" class="map-inner-circle dn rotate01" />
+
+			<div class="thai-text map-inner-text dn">
+				<p class="map-inner-text2">Trimester 3</p>
+				<p class="map-inner-text1">thailand</p>
+				<img src="./images/map/new/thai_flag.png" class="flag" />
+			</div>
+
+			<div id="grade11-line_1to2">
+				<svg xmlns="http://www.w3.org/2000/svg" id="_이어_2" viewBox="0 0 730.34 103.62">
+					<defs>
+						<style>
+							.grade11-line_1to2 {
+								fill: none;
+								stroke: #a10136;
+								stroke-dasharray: 1000;
+								stroke-linecap: round;
+								stroke-linejoin: round;
+								stroke-dashoffset: 0;
+							}
+						</style>
+					</defs>
+					<path class="grade11-line_1to2 dn" d="M729.84,103.12S349.42-112.1,.5,80.83" />
+				</svg>
+			</div>
+
+	
+			<div id="grade11-line_2to3">
+				<svg xmlns="http://www.w3.org/2000/svg" id="_이어_2" viewBox="0 0 218.85 65.19">
+					<defs>
+						<style>
+							.g11_line_2to3 {
+								fill: none;
+								stroke: #a10136;
+								stroke-dasharray: 1000;
+								stroke-linecap: round;
+								stroke-linejoin: round;
+								stroke-dashoffset: 300;
+							}
+						</style>
+					</defs>
+					<path class="g11_line_2to3 dn" d="M.5,8.31S162.65-30.45,218.35,64.69" />
+				</svg>
+			</div>
+
+			<img src="./images/map/map_point.svg" class="mexicodot2 dn" />
+			<img src="./images/map/map_point.svg" class="israedot dn" />
+			<img src="./images/map/map_point.svg" class="thaidot dn" />
+		</div>
+
+		<!-- grade12 map -->
+		<div class="map-img-wrap" id="g-12">
+			<img src="/images/map/grade10_map/map_bg.svg" />
+
+			<!-- USA -->
+			<img src="./images/map/grade12_map/usa_area2.png" id="usa1" class="dn" />
+			<img src="./images/map/new/mexico_area.svg" id="usa5" class="dn"/>
+			<img src="./images/map/grade12_map/usa_icon.svg" id="usa2" class="dn" />
+
+			<span id="usa-line1" class="map-inner-line dn" style="height: 0;"></span>
+			<span id="usa-line2" class="map-inner-line dn" style="width: 0;"></span>
+			<span id="usa-line3" class="map-inner-line dn" style="height: 0;"></span>
+			<img src="./images/map/grade10_map/circle_dot.svg" id="usa3" class="map-inner-circle dn rotate01" />
+
+			<div class="usa-text map-inner-text dn">				
+				<p class="map-inner-text2">Trimester 1</p>
+				<p class="map-inner-text1">usa</p>
+				<img src="/images/map/grade12_map/usa_flag.svg" class="flag" />
+			</div>
+
+			<div id="grade12_line_1to2">
+				<svg xmlns="http://www.w3.org/2000/svg" id="_이어_2" viewBox="0 0 718.76 145.77">
+					<defs>
+						<style>
+							.g12_line_1to2 {
+								fill: none;
+								stroke: #a10136;
+								stroke-dasharray: 1000;
+								stroke-linecap: round;
+								stroke-linejoin: round;
+								stroke-dashoffset: 0;
+							}
+						</style>
+					</defs>
+					<path class="g12_line_1to2 dn" d="M718.46,.4S504.9,158.43,.01,144.39" />
+				</svg>
+			</div>
+			
+				
+
+			<!-- kenya -->
+			<img src="/images/map/grade12_map/kenya_area.svg" id="kenya1" class="dn"/>
+			<img src="/images/map/grade12_map/kenya_icon.svg" id="kenya2" class="dn" />
+			
+			<span id="kenya-line1" class="map-inner-line dn" style="height: 0;"></span>
+			<span id="kenya-line2" class="map-inner-line dn" style="width: 0;"></span>
+			<img src="./images/map/grade10_map/circle_dot.svg" id="kenya3" class="map-inner-circle dn rotate01" />
+
+			<div id="grade12_line_3to4">
+				<svg xmlns="http://www.w3.org/2000/svg" id="_이어_2" viewBox="0 0 85.76 183.58">
+					<defs>
+						<style>
+							.g12_line_3to4 {
+								fill: none;
+								stroke: #a10136;
+								stroke-dasharray: 1000;
+								stroke-linecap: round;
+								stroke-linejoin: round;
+								stroke-dashoffset: 0;
+							}
+						</style>
+					</defs>
+					<path class="g12_line_3to4 dn" d="M.5,.5S113.91,46.9,78.36,183.08" />
+				</svg>
+			</div>
+			<div class="kenya-text map-inner-text dn">				
+				<p class="map-inner-text2">Trimester 2</p>
+				<p class="map-inner-text1">kenya</p>
+				<img src="/images/map/grade12_map/kenya_flag.png" class="flag" />
+			</div>
+			<!-- CZECH -->
+			<img src="/images/map/grade12_map/czech_area.svg" id="czech1" class="dn" />
+			<img src="/images/map/grade12_map/czech_icon.svg" id="czech2" class="dn" />
+			
+			<span id="czech-line1" class="map-inner-line dn" style="height: 0;"></span>
+			<span id="czech-line2" class="map-inner-line dn" style="width: 0;"></span>
+			<img src="./images/map/grade10_map/circle_dot.svg" id="czech3" class="map-inner-circle dn rotate01" />
+			<div class="czech-text map-inner-text dn">
+				<p class="map-inner-text2">Trimester 3</p>
+				<p class="map-inner-text1">czech</p>
+				<img src="/images/map/grade12_map/czech_flag.png" class="flag" />					
+			</div>
+
+			<img src="./images/map/map_point.svg" class="mexicodot1 dn" />	
+			<img src="./images/map/map_point.svg" class="kenyadot dn" />
+			<img src="./images/map/map_point.svg" class="czechdot dn" />
+		</div>
+		
+	</div>
+<!-- //wrap2-->
+
+
+
+  <section class="what">
+    <div class="what-wrap">
+      <div class="what-tit">
+        <span class="what-title">What's on?</span>
+        <span class="arr">
+          <span class="prev"></span>
+          <span class="next"></span>
+        </span>
+      </div>
+      <div class="what-img-wrap">
+        <div class="what-box">
+          <div class="what-img what-img1" id="">
+            <span class="img-text">NEWS</span>
+          </div>
+          <div class="what-text">
+            <span class="what-text-tit">NEWS & EVENTS</span>
+            <span class="what-text-txt">
+              A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+            </span>
+            <div class="what-text-more">
+              <span class="lnr lnr-arrow-right"></span>
+              <span class="more-text">FIND OUT MORE</span>
+            </div>
+          </div>
+        </div>
+        <div class="what-box">
+          <div class="what-img what-img2" id="">
+            <span class="img-text">NEWS</span>
+          </div>
+          <div class="what-text">
+            <span class="what-text-tit">NEWS & EVENTS</span>
+            <span class="what-text-txt">
+              A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+            </span>
+            <div class="what-text-more">
+              <span class="lnr lnr-arrow-right"></span>
+              <span class="more-text">FIND OUT MORE</span>
+            </div>
+          </div>
+        </div>
+        <div class="what-box">
+          <div class="what-img what-img3" id="">
+            <span class="img-text">NEWS</span>
+          </div>
+          <div class="what-text">
+            <span class="what-text-tit">NEWS & EVENTS</span>
+            <span class="what-text-txt">
+              A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+            </span>
+            <div class="what-text-more">
+              <span class="lnr lnr-arrow-right"></span>
+              <span class="more-text">FIND OUT MORE</span>
+            </div>
+          </div>
+        </div>
+        <div class="what-box">
+          <div class="what-img what-img4" id="">
+            <span class="img-text">NEWS</span>
+          </div>
+          <div class="what-text">
+            <span class="what-text-tit">NEWS & EVENTS</span>
+            <span class="what-text-txt">
+              A voyage to becoming an elite! The most essential course of elite education, giving birth to Europe’s brightest intellectuals like Adam Smith, Voltaire, Goethe.
+            </span>
+            <div class="what-text-more">
+              <span class="lnr lnr-arrow-right"></span>
+              <span class="more-text">FIND OUT MORE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+      <footer class="footer">
+        <div class="footer-search_bar">
+          <div class="input-area">
+            <input type="text" />
+          </div>
+          <div class="searchBtn">SEARCH PROGRAMS</div>
+        </div>
+        <div class="footer-info-wrap">
+          <div class="footer-logo">
+            <div><img src="./images/logo_color2.png" /></div>
+          </div>
+          <div class="footer-info">
+            <div class="info-text">
+              <div class="text-bold">Next Challenge School</div>
+              <div class="adress">
+                <span id="adress-img"><img src="./images/foot_loaction.png" /></span>
+                <span id="adress-text">
+                  16-9, Teheran-ro 64-gil, Gangnam-gu,<br />
+                  Seoul, Republic of Korea 06192
+                </span>
+              </div>
+              <div class="tel">
+                <img src="./images/foot_call.png" />
+                <span id="tel-text">410-516-8000</span>
+              </div>
+              <div class="sns-wrap">
+                <span><img src="./images/naverLogo.png" /></span>
+                <span><img src="./images/facebookLogo.png" /></span>
+                <span><img src="./images/linkLogo.png" /></span>
+                <span><img src="./images/youtubeLogo.png" /></span>
+                <span><img src="./images/instagramLogo.png" /></span>
+              </div>
+              <div class="copyRight">© 2022 Next Challenge School. All rights reserved.</div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li>ABOUT</li>
+              <li>ADMISSIONS</li>
+              <li>ACADEMICS</li>
+              <li>STUDENT LIFE</li>
+              <li>GLOBAL EXPERIENCES</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
