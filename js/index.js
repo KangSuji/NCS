@@ -5,11 +5,11 @@ $(document).ready(function () {
     event.stopPropagation();
     return false;
   });
-  $(".navigation").on("scroll touchmove mousewheel", function (event) {
+  /* $(".navigation").on("scroll touchmove mousewheel", function (event) {
     event.preventDefault();
     event.stopPropagation();
     return false;
-  });
+  });*/
 
   //바운스 이미지 클릭시
   $(".bounce img").click(function () {
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   //햄버거 클릭시 나오게
   $(".hamburger").click(function () {
-    $(".navigation").css({ width: "50%" });
+    $(".navigation").css({ width: "100%" });
     $(".nav-dim").css({ width: "100vw" });
   });
   $(".hamburgerX").click(function () {
@@ -92,34 +92,9 @@ $(document).ready(function () {
     $(`.dep3-4 .dep3`).removeClass("on");
   });
 
-  //dep3
-  /*
-  $("#more-3").on("mouseenter", function (event) {
-    event.preventDefault();
-    $(`.dep3-3 > .dep3`).addClass("on");
-    $(`.dep3-3 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-  });
-
-  $(".dep3-3").on("mouseleave", function (event) {
-    event.preventDefault();
-    $(`.dep3-3 .dep3`).removeClass("on");
-    $(`.dep3-3 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-up");
-  });
-  $("#more-4").on("mouseenter", function (event) {
-    event.preventDefault();
-    $(`.dep3-4 > .dep3`).addClass("on");
-    $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-  });
-
-  $(".dep3-4").on("mouseleave", function (event) {
-    event.preventDefault();
-    $(`.dep3-4 .dep3`).removeClass("on");
-    $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-up");
-  });
-
-*/
-
   $("#more-3").on("click", function (event) {
+    $(`.dep3-4 .dep3`).removeClass("on");
+    $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
     event.preventDefault();
     if ($(".dep3-3 > .dep3").hasClass("on")) {
       $(`.dep3-3 .dep3`).removeClass("on");
@@ -130,7 +105,9 @@ $(document).ready(function () {
     }
   });
   $("#more-4").on("click", function (event) {
+    $(`.dep3-3 .dep3`).removeClass("on");
     event.preventDefault();
+
     if ($(".dep3-4 > .dep3").hasClass("on")) {
       $(`.dep3-4 .dep3`).removeClass("on");
       $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
@@ -207,6 +184,17 @@ $(document).ready(function () {
       nextEl: ".dimNext", // 다음 버튼 클래스명
       prevEl: ".dimPrev", // 이번 버튼 클래스명
     },
+    breakpoints: {
+      1200: {
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 325,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+      },
+    },
   });
   $(document).scroll(function () {
     scroll_pos = $(this).scrollTop();
@@ -229,7 +217,7 @@ $(document).ready(function () {
     $("#Grade11").removeClass("btnActive");
     $("#Grade12").removeClass("btnActive");
     for (let i = 1; i < 4; i++) {
-      $(`#img${i}`).css({ background: `url(./images/grade10_${i}.jpg)` });
+      $(`#img${i}`).css({ "background-image": `url(./images/grade10_${i}.jpg)` });
       $(`#img${i} .img-dim-text`).text(img1Arr[i - 1]);
     }
 
@@ -247,7 +235,7 @@ $(document).ready(function () {
     $("#Grade10").removeClass("btnActive");
     $("#Grade12").removeClass("btnActive");
     for (let i = 1; i < 4; i++) {
-      $(`#img${i}`).css({ background: `url(./images/grade11_${i}.jpg)` });
+      $(`#img${i}`).css({ "background-image": `url(./images/grade11_${i}.jpg)` });
       $(`#img${i} .img-dim-text`).text(img2Arr[i - 1]);
     }
     $("#img1").css({
@@ -267,7 +255,7 @@ $(document).ready(function () {
     $("#Grade10").removeClass("btnActive");
     $("#Grade11").removeClass("btnActive");
     for (let i = 1; i < 4; i++) {
-      $(`#img${i}`).css({ background: `url(./images/grade12_${i}.jpg)` });
+      $(`#img${i}`).css({ "background-image": `url(./images/grade12_${i}.jpg)` });
       $(`#img${i} .img-dim-text`).text(img3Arr[i - 1]);
     }
     $("#g-12").css({ display: "block" });
@@ -279,7 +267,7 @@ $(document).ready(function () {
   if ($("#Grade10").hasClass("btnActive")) {
     const img1Arr = ["KOREA", "AUSTRALIA", "FRANCE"];
     for (let i = 1; i < 4; i++) {
-      $(`#img${i}`).css({ background: `url(./images/grade10_${i}.jpg)` });
+      $(`#img${i}`).css({ "background-image": `url(./images/grade10_${i}.jpg)` });
       $(`#img${i} .img-dim-text`).text(img1Arr[i - 1]);
     }
   }
@@ -292,6 +280,16 @@ $(document).ready(function () {
       $(`#img${i} .img-dim`).css({ visibility: "hidden" });
     });
   }
+  //grade9 슬라이드
+  $(".grade9-img-wrap").slick({
+    infinite: true,
+    speed: 300,
+    fade: true,
+    cssEase: "linear",
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  });
 
   //what's on 슬라이드
   $(".what-img-wrap").slick({
@@ -303,6 +301,16 @@ $(document).ready(function () {
     speed: 1300,
     nextArrow: $(".next"),
     prevArrow: $(".prev"),
+    responsive: [
+      {
+        breakpoint: 1480,
+        settings: {
+          centerMode: false,
+          slidesToShow: 2,
+          variableWidth: true,
+        },
+      },
+    ],
   });
 
   //what text hover

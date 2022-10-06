@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow:hidden;
+  overflow: hidden;
   background-color: #fff;
 }
 ul,
@@ -29,7 +29,7 @@ a {
 .lnr {
   font-size: 1.25rem;
   color: #a10136;
-  border:none;
+  border: none;
 }
 .lnr-cross {
   font-size: 1.6rem;
@@ -60,7 +60,7 @@ a {
 .logo img {
   vertical-align: middle;
   width: 100%;
-  max-width:350px;
+  max-width: 350px;
 }
 .util {
   width: 50%;
@@ -112,7 +112,7 @@ a {
   line-height: 70px;
   overflow: hidden;
   transition: line-height 0.1s ease-in-out;
-   cursor: pointer;
+  cursor: pointer;
 }
 .search:hover {
   line-height: 10px;
@@ -138,7 +138,7 @@ a {
   visibility: hidden;
   overflow: hidden;
   height: 0;
-   z-index: 9;
+  z-index: 9;
   background: rgba(161, 1, 54, 1) 0% 0% no-repeat padding-box;
   transition: all 0.3s ease-in;
 }
@@ -214,7 +214,8 @@ a {
   transition: width 0.3s ease-in;
 }
 .nav-wrap {
-  width: 720px;
+  width: 100%;
+  max-width: 720px;
   height: 940px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 60px 0px 0px 60px;
@@ -300,7 +301,6 @@ a {
   position: absolute;
   left: 0;
   display: block;
-
 }
 .dep2.on {
   z-index: 9;
@@ -310,12 +310,11 @@ a {
   opacity: 1;
   height: 300%;
   background-color: #fff;
-
 }
 .dep3.on {
   height: 500%;
   visibility: visible;
-  z-index:11;
+  z-index: 11;
   transition: all 0.1s ease-in;
 }
 .dep2 > li {
@@ -429,7 +428,7 @@ a {
 }
 
 .login {
-  width: 67px;
+  width: 80%;
   height: 24px;
   font-size: 1.25rem;
   line-height: 24px;
@@ -438,12 +437,13 @@ a {
   color: #a10136;
   position: absolute;
   bottom: 100px;
+  cursor: pointer;
 }
 .login.hide {
   color: #fff;
 }
 .dep3-1 .dep2 {
-  height: 190%;
+  height: 185%;
 }
 .dep3-4 .dep3 {
   height: 300%;
@@ -455,19 +455,21 @@ a {
   max-width: 1920px;
   height: 616px;
   background-color: #f3efe7;
-  padding: 80px 300px 108px;
+  padding: 80px 5% 108px;
   box-sizing: border-box;
   position: relative;
   z-index: 5;
-  
+  margin: 0 auto;
 }
 .footer-search_bar {
-  width: 1320px;
+  width: 100%;
+  max-width: 1320px;
   height: 70px;
   border: 4px solid #a10136;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  margin: 0 auto;
 }
 .input-area {
   width: 100%;
@@ -484,7 +486,7 @@ a {
   font-size: 1.375rem;
 }
 .searchBtn {
-  width:100%;
+  width: 100%;
   max-width: 348px;
   height: 70px;
   background-color: #a10136;
@@ -497,25 +499,31 @@ a {
 }
 .footer-info-wrap {
   width: 100%;
+  max-width: 1320px;
   display: flex;
+  margin: 0 auto;
   margin-top: 94px;
+  justify-content: space-between;
+}
+.footer-line {
+  height: 270px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-right: 40px;
 }
 .footer-logo {
   height: 270px;
-  width: 25%;
-  border-right: 2px solid rgba(255, 255, 255, 0.4);
-  padding-right: 41px;
-  margin-right: 70px;
+  width: 33%;
+  margin-right: 40px;
 }
+
 .footer-logo img {
-	width: 100%;
+  width: 100%;
 }
 
 .footer-info {
-  width: 30%;
-  border-right: 2px solid rgba(255, 255, 255, 0.4);
-  padding-right: 30px;
-  margin-right: 110px;
+  width: 33%;
+  margin-right: 40px;
 }
 .footer-info .info-text .text-bold {
   font-family: "Arial", Helvetica, sans-serif;
@@ -544,6 +552,12 @@ a {
   line-height: 32px;
   vertical-align: top;
 }
+#adress-img img {
+  width: 100%;
+  vertical-align: top;
+  display: block;
+  margin-top: -5px;
+}
 #adress-text {
   font-size: 1.2rem;
   line-height: 32px;
@@ -571,11 +585,11 @@ a {
   color: #797979;
 }
 .footer-menu {
-  width: 30%;
+  width: 33%;
 }
 .footer-menu ul {
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .footer-menu li {
@@ -597,6 +611,7 @@ a {
   height: 100px;
   overflow: hidden;
   position: relative;
+  margin-top: -100px;
 }
 #curved-corner-bottomleft:before,
 #curved-corner-bottomright:before {
@@ -610,10 +625,10 @@ a {
 #curved-corner-bottomleft:before {
   bottom: 0;
   left: 0;
-  box-shadow: -50px 50px 0 0 #fff;
+  box-shadow: -50px 50px 0 0 #a10136;
 }
 #curved-corner-bottomright:before {
   bottom: 0;
   right: 0;
-  box-shadow: 50px 50px 0 0 #fff;
+  box-shadow: 50px 50px 0 0 #a10136;
 }
