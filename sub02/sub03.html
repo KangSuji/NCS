@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sub01.css" />
+    <link rel="stylesheet" href="../css/sub02.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    <title>NCS-sub01/sub01</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="logo">
+          <a href="/"><img src="../images/logo_wht2.png" /></a>
+        </div>
+        <div class="util">
+          <span class="search">
+            <img src="../images/search_icon.png" />
+            <span class="searchText">search</span>
+          </span>
+          <span class="hamburger"></span>
+        </div>
+      </header>
+      <div class="header-search">
+        <img src="../images/close_btn.gif" class="closeBtn" />
+        <div class="header-input-area">
+          <input type="text" onfocus="this.placeholder=''" onblur="this.placeholder='Search...'" placeholder="Search..." />
+          <img src="../images/search_icon.png" />
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <div class="nav-wrap">
+          <span class="hamburgerX">
+            <span class="lnr lnr-cross"></span>
+          </span>
+          <div class="nav-top">
+            <a href="/"><div class="nav-top_text">Home</div></a>
+          </div>
+
+          <div class="nav-bottom">
+            <ul class="dep1">
+              <li class="dep1-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">About</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Greetings</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Mission, Vision and Values</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Accreditation and Memberships</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">History</a>
+                    <span class="dep2-sub-tit">step 1 ~ step 5</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Our People</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Career Opportunities</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Contact</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep2-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Admissions</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Overview</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Important Dates & Deadlines</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Apply</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Tuition & Financial Aid</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Meet the Admissions Team</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Events</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep3-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Academics</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li class="dep3-3">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">Curriculum</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-3"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Overview</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Capstone Project</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Graduation Requirements</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">NEXT META</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">College Counseling</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-4"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Dual Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Project Based Learning</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Counseling</a>
+                        <span class="dep2-sub-tit">grade10 ~ 12</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">College Acceptances</a>
+                        <span class="dep2-sub-tit">by country</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <a href="javascript:void(0)" class="no-line">Academic Calendar</a>
+                  </li>
+                  <li class="dep3-5">
+                    <a href="javascript:void(0)" class="no-line">School Profile</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep4-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Student Life</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Living Abroad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Diversity</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Clubs & Sports</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Outreach</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Spiritual Life</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Guest Speakers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dep5-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title" class="no-line">Global Experiences</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Experiential Learning</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Host Countries</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Safety & Security</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="login">Login</div>
+        </div>
+      </nav>
+      <div class="nav-dim"></div>
+      <div class="sub-content">
+        <section class="sub-head">
+          <div class="sub-head-text">
+            <div class="dep1-title">Admissions</div>
+            <div class="dep2-title">
+              Tuition &<br />
+              Financial Aid
+            </div>
+          </div>
+          <div class="sub-head-deco"></div>
+        </section>
+
+        <section class="sub02-sub03">
+          <div class="sub02-sub03-wrap">
+            <div class="sub02-sub03-tit">Include</div>
+            <div class="sub02-sub03-box-wrap">
+              <div class="sub02-sub03-box">
+                <img src="../images/sub/people_icon01.svg" />
+                <div class="sub03-box-text">Tuition</div>
+              </div>
+              <div class="sub02-sub03-box">
+                <img src="../images/sub/people_icon01.svg" />
+                <div class="sub03-box-text">Accommodation</div>
+              </div>
+              <div class="sub02-sub03-box">
+                <img src="../images/sub/people_icon01.svg" />
+                <div class="sub03-box-text">
+                  Travel
+                  <div class="sub03-box-subtext">(Flight costs not included)</div>
+                </div>
+              </div>
+              <div class="sub02-sub03-box">
+                <img src="../images/sub/people_icon01.svg" />
+                <div class="sub03-box-text">Tech</div>
+              </div>
+              <div class="tuition-box">
+                <div class="tuition-tit">Tuition</div>
+                <div class="tuition-price">$99,000</div>
+                <div class="tuition-year">Tuition for Academic Year 2023-2024</div>
+              </div>
+            </div>
+            <div class="sub03 sec02-inner-text">
+              <li>i. Tuition for Academic Year 2023-2024 is $99,000 for all students.</li>
+              <li>
+                ii. Tuition covers low faculty-to-student ratio instruction, access to online courses and textbooks, accommodation in 4 different countries, traveling cost, meals, technology, fees for
+                co-curricular and extracurricular events, as well as services offered by our support staff.
+              </li>
+              <li>iii. Financial Aid & Scholarships are to be announced.</li>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-search_bar">
+          <div class="input-area">
+            <input type="text" />
+          </div>
+          <div class="searchBtn">SEARCH PROGRAMS</div>
+        </div>
+        <div class="footer-info-wrap">
+          <div class="footer-logo">
+            <div><img src="../images/logo_color2.png" /></div>
+          </div>
+          <div class="footer-info">
+            <div class="info-text">
+              <div class="text-bold">Next Challenge School</div>
+              <div class="adress">
+                <span id="adress-img"><img src="../images/foot_loaction.png" /></span>
+                <span id="adress-text">
+                  16-9, Teheran-ro 64-gil, Gangnam-gu,<br />
+                  Seoul, Republic of Korea 06192
+                </span>
+              </div>
+              <div class="tel">
+                <img src="../images/foot_call.png" />
+                <span id="tel-text">410-516-8000</span>
+              </div>
+              <div class="sns-wrap">
+                <span><img src="../images/naverLogo.png" /></span>
+                <span><img src="../images/facebookLogo.png" /></span>
+                <span><img src="../images/linkLogo.png" /></span>
+                <span><img src="../images/youtubeLogo.png" /></span>
+                <span><img src="../images/instagramLogo.png" /></span>
+              </div>
+              <div class="copyRight">© 2022 Next Challenge School. All rights reserved.</div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li>ABOUT</li>
+              <li>ADMISSIONS</li>
+              <li>ACADEMICS</li>
+              <li>STUDENT LIFE</li>
+              <li>GLOBAL EXPERIENCES</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

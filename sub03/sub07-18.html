@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sub01.css" />
+    <link rel="stylesheet" href="../css/sub02.css" />
+    <link rel="stylesheet" href="../css/sub03.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    <title>NCS-sub01/sub01</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="logo">
+          <a href="/"><img src="../images/logo_wht2.png" /></a>
+        </div>
+        <div class="util">
+          <span class="search">
+            <img src="../images/search_icon.png" />
+            <span class="searchText">search</span>
+          </span>
+          <span class="hamburger"></span>
+        </div>
+      </header>
+      <div class="header-search">
+        <img src="../images/close_btn.gif" class="closeBtn" />
+        <div class="header-input-area">
+          <input type="text" onfocus="this.placeholder=''" onblur="this.placeholder='Search...'" placeholder="Search..." />
+          <img src="../images/search_icon.png" />
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <div class="nav-wrap">
+          <span class="hamburgerX">
+            <span class="lnr lnr-cross"></span>
+          </span>
+          <div class="nav-top">
+            <a href="/"><div class="nav-top_text">Home</div></a>
+          </div>
+
+          <div class="nav-bottom">
+            <ul class="dep1">
+              <li class="dep1-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">About</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Greetings</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Mission, Vision and Values</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Accreditation and Memberships</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">History</a>
+                    <span class="dep2-sub-tit">step 1 ~ step 5</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Our People</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Career Opportunities</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Contact</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep2-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Admissions</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Overview</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Important Dates & Deadlines</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Apply</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Tuition & Financial Aid</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Meet the Admissions Team</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Events</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep3-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Academics</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li class="dep3-3">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">Curriculum</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-3"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Overview</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Capstone Project</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Graduation Requirements</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">NEXT META</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">College Counseling</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-4"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Dual Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Project Based Learning</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Counseling</a>
+                        <span class="dep2-sub-tit">grade10 ~ 12</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">College Acceptances</a>
+                        <span class="dep2-sub-tit">by country</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <a href="javascript:void(0)" class="no-line">Academic Calendar</a>
+                  </li>
+                  <li class="dep3-5">
+                    <a href="javascript:void(0)" class="no-line">School Profile</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep4-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Student Life</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Living Abroad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Diversity</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Clubs & Sports</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Outreach</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Spiritual Life</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Guest Speakers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dep5-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title" class="no-line">Global Experiences</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Experiential Learning</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Host Countries</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Safety & Security</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="login">Login</div>
+        </div>
+      </nav>
+      <div class="nav-dim"></div>
+      <div class="sub-content">
+        <section class="sub-head sub02 sub03-sub07">
+          <div class="sub-head-text sub03">
+            <div class="dep1-title">Academics <span class="lnr lnr-chevron-right"></span> College Counseling</div>
+            <div class="dep2-title">Counseling</div>
+          </div>
+          <div class="sub-head-deco"></div>
+        </section>
+
+        <section class="sub03-sub07-sec">
+          <div class="sub03-sub07-wrap">
+            <div class="about-wrap sub07">
+              <ul>
+                <li class="counseling-tit">9th Grade</li>
+                <li class="counseling-txt">
+                  Freshman students should thoroughly plan their potential 4-year course of study. Having a clear outline of a 4-year high school curriculum will allow students to identify personal
+                  and educational goals. In their freshman year, students should aim to develop interests through exploring an abundant amount of extracurricular activities. Most students will take
+                  TOEFL exams to get used to the test format.
+                </li>
+              </ul>
+              <ul>
+                <li></li>
+                <li class="counseling-tit">10th Grade</li>
+                <li class="counseling-txt">
+                  Sophomore students should start preparing themselves for the admissions process, which will begin in earnest in the fall of their junior year. Most notably, sophomores should check
+                  with their academic advisors regarding course selection, and think about standardized testing (you may want to sign up to take the PSAT in October), as well as attending NCS virtual
+                  and in-person college fairs.
+                </li>
+              </ul>
+              <ul>
+                <li></li>
+                <li class="counseling-tit">11th Grade</li>
+                <li class="counseling-txt">
+                  College advisors initiate one-on-one work with juniors in mid-November. The College Advising Office encourages students and their parents to start touring campuses in the summer
+                  between their sophomore and junior years to begin to get a sense of what sort of college may seem like a good fit based on location, size, academic focus, and selectivity. A more
+                  comprehensive list of college suggestions will be created by the college advisor and the student in the winter of their junior year. Most juniors will take either the ACT or the SAT
+                  during the spring and AP exams in the first two weeks of May. Most students will take the ACT /SAT twice. We strongly encourage juniors to ask two teachers for recommendation letters
+                  for college application before the school closes for summer. Colleges generally expect to hear from two academic teachers, ideally in different subject areas: often one math/science
+                  teacher and one humanities teacher.
+                </li>
+              </ul>
+              <ul>
+                <li></li>
+                <li class="counseling-tit">12th Grade</li>
+                <li class="counseling-txt">
+                  Research the colleges on the list from your college advisor and any other institutions that interest you. Note curriculum requirements, faculty-student ratios, retention rates,
+                  housing, strength of the department(s) that most interest you, location, social life, and any other criteria that are important to you—such as athletics, diversity, community
+                  service, etc. Interviews are either evaluative or informational. To prepare for an interview, research the college’s offerings in your academic area of interest and prepare a few
+                  questions you would like to ask them. Be ready to speak about your academic and extracurricular interests. Practice through a mock interview with a parent pretending to be the
+                  admission officer. After an interview, write a thank you note (hand-written or emailed), mentioning specific things you liked about the college. Summer is the time to begin to tackle
+                  this project, especially drafting a few essays. Your objective is to tell them something about yourself that they will not know from the rest of your application. That means that you
+                  do not want to write a resumé or write about an abstract topic that is hard to grasp in 500 words. Instead, try to find a story about you that illustrates something you want colleges
+                  to know. Finding a good topic is the hardest part. Start brainstorming. Send your advisor a couple of your best ideas, and the two of you can decide which idea has the most
+                  potential. Write a first draft, and feel free to send it to your advisor for some feedback. By the time you return to NCS we hope that you will have a third or fourth draft that we
+                  can look over. You may also want to consult with one of your English teachers or your advisor. Try to limit the number of proofreaders for your essay; too many editors tend to muddy
+                  the waters. Early Decision is a plan whereby a student who knows where s/he wants to go and seems well qualified can apply, usually by November 1st or 15th, and receives a decision
+                  in December. If admitted, the student must enroll and withdraw any other applications. Early Action is a plan by which a student applies early (usually a November deadline), and
+                  receives an admissions decision in December or January. Early Action is non-binding, so students may apply to other colleges if admitted EA, but an early offer can lead to a much
+                  shorter college list and a sense of relief at having one exciting offer before the spring. A student with a clear first choice and strong qualifications at the time of application
+                  may be rewarded with early peace of mind.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-search_bar">
+          <div class="input-area">
+            <input type="text" />
+          </div>
+          <div class="searchBtn">SEARCH PROGRAMS</div>
+        </div>
+        <div class="footer-info-wrap">
+          <div class="footer-logo">
+            <div><img src="../images/logo_color2.png" /></div>
+          </div>
+          <div class="footer-info">
+            <div class="info-text">
+              <div class="text-bold">Next Challenge School</div>
+              <div class="adress">
+                <span id="adress-img"><img src="../images/foot_loaction.png" /></span>
+                <span id="adress-text">
+                  16-9, Teheran-ro 64-gil, Gangnam-gu,<br />
+                  Seoul, Republic of Korea 06192
+                </span>
+              </div>
+              <div class="tel">
+                <img src="../images/foot_call.png" />
+                <span id="tel-text">410-516-8000</span>
+              </div>
+              <div class="sns-wrap">
+                <span><img src="../images/naverLogo.png" /></span>
+                <span><img src="../images/facebookLogo.png" /></span>
+                <span><img src="../images/linkLogo.png" /></span>
+                <span><img src="../images/youtubeLogo.png" /></span>
+                <span><img src="../images/instagramLogo.png" /></span>
+              </div>
+              <div class="copyRight">© 2022 Next Challenge School. All rights reserved.</div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li>ABOUT</li>
+              <li>ADMISSIONS</li>
+              <li>ACADEMICS</li>
+              <li>STUDENT LIFE</li>
+              <li>GLOBAL EXPERIENCES</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

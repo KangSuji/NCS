@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $(".sub04-row-dep1").each("click", function () {
+    $(this).next(".sub04-row-dep2").css({ hegiht: "0" });
+  });
   //네비게이션 메뉴 켜지면 스크롤 금지
   $(".nav-dim").on("scroll touchmove mousewheel", function (event) {
     event.preventDefault();
@@ -128,7 +131,23 @@ $(document).ready(function () {
     $(`.dep4-1 .dep2`).removeClass("on");
     $(".login").removeClass("hide");
     $(`.dep4-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-down");
+    $(`.dep4-2 .dep3`).removeClass("on");
+    $(`.dep4-2 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
   });
+
+  $("#more-5").on("click", function (event) {
+    // $(`.dep4-1 .dep3`).removeClass("on");
+    event.preventDefault();
+
+    if ($(".dep4-2 > .dep3").hasClass("on")) {
+      $(`.dep4-2 .dep3`).removeClass("on");
+      $(`.dep4-2 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
+    } else {
+      $(`.dep4-2 > .dep3`).addClass("on");
+      $(`.dep4-2 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-up");
+    }
+  });
+
   $(".dep5-1").on("mouseenter", function (event) {
     event.preventDefault();
     $(`.dep5-1 > .dep2`).addClass("on");
@@ -280,6 +299,7 @@ $(document).ready(function () {
       $(`#img${i} .img-dim`).css({ visibility: "hidden" });
     });
   }
+
   //grade9 슬라이드
   $(".grade9-img-wrap").slick({
     infinite: true,
@@ -386,25 +406,6 @@ function move03() {
     });
 }
 
-/*
-  function move04() {
-    $("#taiwan1")
-      .delay(1000)
-      .fadeIn(spd, function () {
-        $(".taiwandot").fadeIn(spd, function () {
-          $("#taiwan-line").fadeIn(spd, function () {
-            $("#taiwan-line").css("width", "6%");
-            $("#taiwan2,#taiwan3")
-              .delay(500)
-              .fadeIn(spd, function () {
-                $(".taiwan-text").fadeIn(spd, function () {});
-              });
-          });
-        });
-      });
-  }
-*/
-
 function move_11_01() {
   $("#mexico1")
     .delay(1000)
@@ -476,22 +477,7 @@ function move_11_03() {
       });
     });
 }
-/*
-  function move_11_04() {
-    $("#israel1").delay(500).fadeIn(spd, function () {
-      $("#israel-line1").fadeIn(spd, function () {
-        $("#israel-line1").css("height", "33%");
-        $("#israel2,#israel3")
-          .delay(500)
-          .fadeIn(spd, function () {
-            $(".israel-text").fadeIn(spd, function () {
-             
-            });
-          });
-      });
-    });
-  }
-*/
+
 function move_12_01() {
   $("#usa1,#usa5")
     .delay(1000)
@@ -521,22 +507,6 @@ function move_12_01() {
       });
     });
 }
-
-/*
-    function move_12_02() {
-      $("#mexico-line1").fadeIn(spd, function () {
-	    $("#mexico-line1").css("width", "19%");
-			$("#mexico-line2").delay(500).fadeIn(spd, function () {
-		  $("#mexico-line2").css("height", "5.6%");
-		  $("#mexico2,#mexico3").delay(500).fadeIn(spd, function () {
-			$(".mexico-text").fadeIn(spd, function () {
-				$(".g12_line_2to3").attr("class", "g12_line_2to3 dash01");
-				move_12_03();
-			  });
-			});
-		  });
-		});	  
-	}*/
 
 function move_12_03() {
   $("#kenya1")

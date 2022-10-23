@@ -26,6 +26,9 @@ li {
 a {
   text-decoration: none;
 }
+.bold {
+  font-weight: bold;
+}
 .lnr {
   font-size: 1.25rem;
   color: #a10136;
@@ -35,6 +38,9 @@ a {
   font-size: 1.6rem;
   color: #fff;
   line-height: 60px;
+}
+.lnr-chevron-right {
+  color: #ffffff;
 }
 .wrap {
   width: 100%;
@@ -224,6 +230,7 @@ a {
   top: 0;
   padding: 100px 90px 100px 59px;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 .nav-top {
   width: 100%;

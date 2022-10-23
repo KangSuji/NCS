@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="601" viewBox="0 0 500 601">
+  <g id="next_cycle_img" transform="translate(-710 -3073)">
+    <circle id="타원_103" data-name="타원 103" cx="125" cy="125" r="125" transform="translate(835 3073)" fill="#a10136"/>
+    <circle id="타원_104" data-name="타원 104" cx="125" cy="125" r="125" transform="translate(730 3240)" fill="#ff869e" opacity="0.8"/>
+    <circle id="타원_105" data-name="타원 105" cx="125" cy="125" r="125" transform="translate(940 3240)" fill="#ffb8c6" opacity="0.8"/>
+    <text id="Educational_Foundation" data-name="Educational
+Foundation" transform="translate(960 3190)" fill="#fff" font-size="36" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-102" y="0">Educational</tspan><tspan x="-97" y="42">Foundation</tspan></text>
+    <text id="Tech" transform="translate(855 3378)" fill="#fff" font-size="36" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-40" y="0">Tech</tspan></text>
+    <text id="Global_Insight" data-name="Global
+Insight" transform="translate(1065 3357)" fill="#fff" font-size="36" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-56" y="0">Global</tspan><tspan x="-58" y="42">Insight</tspan></text>
+    <rect id="사각형_10568" data-name="사각형 10568" width="453" height="65" transform="translate(737 3429)" fill="#ffe7bf"/>
+    <rect id="사각형_10570" data-name="사각형 10570" width="40" height="51" transform="translate(940 3463)" fill="#ffe7bf"/>
+    <rect id="사각형_10569" data-name="사각형 10569" width="500" height="80" transform="translate(710 3594)" fill="#797979"/>
+    <text id="NC_Capstone_Project" data-name="NC Capstone Project" transform="translate(964 3474)" fill="#797979" font-size="36" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-179" y="0">NC Capstone Project</tspan></text>
+    <text id="Game_Changer" data-name="Game Changer" transform="translate(960 3647)" fill="#fff" font-size="36" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-128" y="0">Game Changer</tspan></text>
+    <path id="다각형_4" data-name="다각형 4" d="M46,0,92,40H0Z" transform="translate(1006 3554) rotate(180)" fill="#ffe7bf"/>
+  </g>
+</svg>

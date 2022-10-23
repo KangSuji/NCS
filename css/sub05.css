@@ -1,0 +1,316 @@
+/* sub05/sub01 */
+.sub-head.sub02.sub05-sub01 {
+  background-image: url("../images/sub/sub05-sub01Bg.png");
+}
+.sub05-sub01-sec {
+  width: 100%;
+  margin-top: 100px;
+}
+.sub05-sub01-wrap {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+.sub02-sub03-text-wrap.sub05 {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.sub05-sub01-sec02 {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 140px;
+}
+.sub05-sub01-sec02 .sub05-sub01-wrap {
+  margin-top: 100px;
+}
+/* sub05-sub02 */
+.sub05-sub01-sec.sport {
+  margin-bottom: 140px;
+}
+.country-select-bar {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 60px;
+  padding: 30px 70px 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 10px #0000000f;
+  border: 1px solid #f6f6f6;
+  border-radius: 40px;
+  margin-bottom: 100px;
+}
+.country-btn {
+  width: 120%;
+  flex-shrink: 0;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  color: #191919;
+}
+.country-btn.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #a10136;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 20px;
+}
+.country-info-wrap {
+  width: 100%;
+  display: flex;
+  gap: 77px;
+  margin-bottom: 65px;
+}
+.country-info-left {
+  width: calc(100% - 600px);
+}
+.country-info-right {
+  width: 100%;
+  max-width: 600px;
+}
+.country-info-right img {
+  width: 100%;
+  max-width: 600px;
+}
+th.gray-th {
+  background: #f4f4f4;
+  color: #000;
+}
+.apcourse-table.country-table th,
+.apcourse-table.country-table td {
+  border-left: 1px solid #e5e4e4;
+}
+.apcourse-table.country-table tr th:first-child,
+.apcourse-table.country-table tr td:first-child {
+  border-left: none;
+}
+.country-map-section {
+  width: 100%;
+  margin-top: 100px;
+}
+.country-map-section .sub02-sub03-tit {
+  margin-bottom: 60px;
+}
+.country-map-wrap {
+  width: 100%;
+  padding: 50px 50px 50px 40px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.country-map-wrap .country-map {
+  width: 50%;
+  text-align: center;
+}
+.country-map-wrap .country-map img {
+  width: 100%;
+  max-width: 595px;
+}
+.country-map-info {
+  width: 50%;
+}
+.local-row > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+.local-color {
+  width: 22px;
+  height: 22px;
+  margin-right: 15px;
+}
+.local-name {
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #797979;
+}
+#seoul {
+  background-color: #bbc154;
+}
+#Busan {
+  background-color: #cd7383;
+}
+#Daegu {
+  background-color: #507c83;
+}
+#Incheon {
+  background-color: #c8d9a7;
+}
+#Gwangju {
+  background-color: #d39464;
+}
+#Daejeon {
+  background-color: #7cbba1;
+}
+#Ulsan {
+  background-color: #79a5ff;
+}
+#Gyeonggi {
+  background-color: #dde56b;
+}
+#Gangwon {
+  background-color: #aed46f;
+}
+#Chungcheongbuk {
+  background-color: #aed8b7;
+}
+#Chungcheongnam {
+  background-color: #8dd3b7;
+}
+#Jeollabuk {
+  background-color: #f5d56c;
+}
+#Jeollanam {
+  background-color: #f7bc92;
+}
+#Gyeongsangbuk {
+  background-color: #7ab8cf;
+}
+#Gyeongsangnam {
+  background-color: #f5b4b7;
+}
+#Jeju {
+  background-color: #d6b2d2;
+}
+#Sejong {
+  background-color: #579d7f;
+}
+.country-demographics {
+  margin-top: 100px;
+}
+.apcourse-table.country-table.demographics tr th.gray-th {
+  border-bottom: 1px solid #e5e4e4;
+}
+.apcourse-table.country-table.demographics {
+  margin-top: 60px;
+}
+
+.university-wrap {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+.university-box {
+  width: 300px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  border: 1px solid #e5e4e4;
+  padding: 30px 0px;
+  box-sizing: border-box;
+  gap: 30px;
+}
+.university-txt {
+  text-align: center;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #797979;
+  line-height: 28px;
+}
+.sub02-sub03-text.university {
+  margin-bottom: 60px;
+}
+.religion-wrap {
+  margin-top: 100px;
+}
+.country-map-wrap.religion {
+  margin-top: 60px;
+}
+
+#no-religion {
+  background-color: #a00224;
+}
+#protestantism {
+  background-color: #3364dd;
+}
+#buddhism {
+  background-color: #efc514;
+}
+#catholicism {
+  background-color: #7932cc;
+}
+#others {
+  background-color: #183251;
+}
+.country-map.religion img {
+  max-width: 382px;
+  width: 100%;
+}
+.ent-wrap {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+}
+.ent-img-wrap {
+  width: 50%;
+}
+.ent-img {
+  width: 100%;
+  max-width: 640px;
+  height: 410px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bts {
+  background-image: url("../images/sub/korea_imgs01.png");
+  position: relative;
+}
+#squid {
+  background-image: url("../images/sub/korea_imgs02.png");
+}
+.ent-img-text {
+  text-align: center;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #797979;
+  margin-top: 20px;
+}
+.country-map-wrap.ent {
+  margin-top: 20px;
+}
+.copy-img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+#bulgogi {
+  background-image: url("../images/sub/korea_imgs03.png");
+  position: relative;
+}
+#kimchi {
+  background-image: url("../images/sub/korea_imgs04.png");
+}
+.sub02-sub03-text-wrap.ent > p {
+  margin: 0;
+}
+.country-sports-wrap {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 60px;
+}
+#son {
+  background-image: url("../images/sub/korea_imgs05.png");
+  position: relative;
+  height: 600px;
+}
+.country-map-wrap.sport {
+  width: 50%;
+}
