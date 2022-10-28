@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/subResponsive.css" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    <title>NCS-sub01/sub01</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="logo">
+          <a href="/"><img src="../images/logo_wht2.png" /></a>
+        </div>
+        <div class="util">
+          <span class="search">
+            <img src="../images/search_icon.png" />
+            <span class="searchText">search</span>
+          </span>
+          <span class="hamburger"></span>
+        </div>
+      </header>
+      <div class="header-search">
+        <img src="../images/close_btn.gif" class="closeBtn" />
+        <div class="header-input-area">
+          <input type="text" onfocus="this.placeholder=''" onblur="this.placeholder='Search...'" placeholder="Search..." />
+          <img src="../images/search_icon.png" />
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <div class="nav-wrap">
+          <span class="hamburgerX">
+            <span class="lnr lnr-cross"></span>
+          </span>
+          <div class="nav-top">
+            <a href="/"><div class="nav-top_text">Home</div></a>
+          </div>
+
+          <div class="nav-bottom">
+            <ul class="dep1">
+              <li class="dep1-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">About</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Greetings</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Mission, Vision and Values</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Accreditation and Memberships</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">History</a>
+                    <span class="dep2-sub-tit">step 1 ~ step 5</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Our People</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Career Opportunities</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Contact</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep2-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Admissions</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Overview</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Important Dates & Deadlines</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Apply</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Tuition & Financial Aid</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Meet the Admissions Team</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Events</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep3-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Academics</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li class="dep3-3">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">Curriculum</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-3"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Overview</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Capstone Project</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Graduation Requirements</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">NEXT META</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">College Counseling</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-4"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Dual Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Project Based Learning</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Counseling</a>
+                        <span class="dep2-sub-tit">grade10 ~ 12</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">College Acceptances</a>
+                        <span class="dep2-sub-tit">by country</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <a href="javascript:void(0)" class="no-line">Academic Calendar</a>
+                  </li>
+                  <li class="dep3-5">
+                    <a href="javascript:void(0)" class="no-line">School Profile</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep4-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Student Life</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Living Abroad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Diversity</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Clubs & Sports</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Outreach</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Spiritual Life</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Guest Speakers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dep5-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title" class="no-line">Global Experiences</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Experiential Learning</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Host Countries</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Safety & Security</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="login">Login</div>
+        </div>
+      </nav>
+      <div class="nav-dim"></div>
+      <div class="sub-content">
+        <section class="sub-head">
+          <div class="sub-head-text sub04">
+            <div class="dep1-title">Global Experiences</div>
+            <div class="dep2-title">Grade 10</div>
+          </div>
+          <div class="sub-head-deco"></div>
+        </section>
+
+        <section class="sub05-sub01-sec sport">
+          <div class="sub05-sub01-wrap">
+            <div class="country-select-bar">
+              <a href=""><div class="country-btn active">South Korea</div></a>
+              <a href=""><div class="country-btn">France</div></a>
+              <a href=""><div class="country-btn">Australia</div></a>
+            </div>
+            <div class="country-info-wrap">
+              <div class="country-info-left france">
+                <div class="sub02-sub03-tit">Climate, Geography</div>
+                <div class="sub02-sub03-text-wrap">
+                  <p>
+                    Australia is the world’s largest island and 6th largest country in the world, located in Oceania. Due to its enormous landmass, the geography of the country varies by region. The
+                    north-eastern parts of the country are filled with tropical rainforests, while the south-eastern, south-western, eastern parts of the country are mostly mountain ranges. The
+                    central region of Australia is a desert and makes up the largest proportion of the land. Climate in Australia, like its geography, is not uniform. The climate ranges from
+                    Mediterranean to Alpine throughout the country. Australia has 4 seasons that are opposite in terms of time from other nations in the northern hemisphere.
+                  </p>
+                </div>
+              </div>
+              <div class="country-info-right">
+                <img src="../images/sub2/grade10_2.png" />
+              </div>
+            </div>
+            <div class="srcoll-wrap">
+              <table class="apcourse-table country-table">
+                <tr>
+                  <th></th>
+                  <th>Dec</th>
+                  <th>Jan</th>
+                  <th>Feb</th>
+                  <th>Mar</th>
+                  <th>Apr</th>
+                  <th>May</th>
+                  <th>Jun</th>
+                  <th>Jul</th>
+                  <th>Aug</th>
+                  <th>Sep</th>
+                  <th>Oct</th>
+                  <th>Nov</th>
+                </tr>
+                <tr>
+                  <th class="gray-th"></th>
+                  <th class="gray-th" colspan="3">Summer</th>
+                  <th class="gray-th" colspan="3">Autumn</th>
+                  <th class="gray-th" colspan="3">Winter</th>
+                  <th class="gray-th" colspan="3">Spring</th>
+                </tr>
+                <tr>
+                  <td>Max ˚C</td>
+                  <td>25.7</td>
+                  <td>26.4</td>
+                  <td>26.3</td>
+                  <td>25.2</td>
+                  <td>22.9</td>
+                  <td>20</td>
+                  <td>17.6</td>
+                  <td>17</td>
+                  <td>18.3</td>
+                  <td>20.5</td>
+                  <td>22.5</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>Min ˚C</td>
+                  <td>17.5</td>
+                  <td>18.8</td>
+                  <td>19</td>
+                  <td>17.5</td>
+                  <td>14.1</td>
+                  <td>10.9</td>
+                  <td>8.6</td>
+                  <td>7.1</td>
+                  <td>8.1</td>
+                  <td>10.3</td>
+                  <td>13.1</td>
+                  <td>15.3</td>
+                </tr>
+              </table>
+            </div>
+            <div class="country-map-section">
+              <div class="sub02-sub03-tit">Administrative Divisions</div>
+              <div class="country-map-wrap aust">
+                <div class="country-map">
+                  <img src="../images/sub2/australia_maps.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="country-demographics">
+              <div class="sub02-sub03-tit">Demographics</div>
+              <table class="apcourse-table country-table demographics">
+                <tr>
+                  <th colspan="2">2022 (World Ranking)</th>
+                </tr>
+                <tr>
+                  <th class="gray-th">Population</th>
+                  <td>26,180,437(55rd)</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Population in Paris</th>
+                  <td>8.16 million</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Population Growth Rate</th>
+                  <td>1.26%(106th)</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Life Expectancy</th>
+                  <td>85.4 years (8th)</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Ethnicity</th>
+                  <td>
+                    57.2% European<br />
+                    33.8% Oceanian<br />
+                    17.4% Asian<br />
+                    3.2% North African & Middle eastern<br />
+                    3.2% Aborginal<br />
+                    1.4% Americas (Notrth, South)<br />
+                    1.3% Sub-Sagaran African<br />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Language</th>
+                  <td>
+                    87.2% French<br />
+                    3.6% Arabic<br />
+                    1.5% Protuguese<br />
+                    1.2% Spanish<br />
+                    1% Italian
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="country-demographics">
+              <div class="sub02-sub03-tit">Education</div>
+              <div class="sub02-sub03-text-wrap sub05">
+                <p>
+                  School education in Australia is compulsory up to the age of 16 (year 10). The educational system is divided in to 3 stages of Primary School, Secondary School, and Senior Secondary
+                  School. Yet, it holds the record of the highest ratio of international students. Top universities in Australia are: Australian National University (ANU), University of Sydney,
+                  University of Melbourne, University of New South Wales (UNSW) and University of Queensland (UQ).
+                </p>
+              </div>
+
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Religion</div>
+                <div class="country-map-wrap religion">
+                  <div class="country-map religion">
+                    <img src="../images/sub2/australia_graph.svg" />
+                    <div class="ent-img-text">Religion in South Korea</div>
+                  </div>
+                  <div class="country-map-info">
+                    <div class="local-row">
+                      <span class="local-color" id="no-religion"></span>
+                      <span class="local-name">No Religion</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="christianity"></span>
+                      <span class="local-name">Christianity</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="islam"></span>
+                      <span class="local-name">Islam</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="Hinduism"></span>
+                      <span class="local-name">Hinduism</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="Buddhism"></span>
+                      <span class="local-name">Buddhism</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="Sikhism"></span>
+                      <span class="local-name">Sikhism</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="Judaism"></span>
+                      <span class="local-name">Judaism</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="country-demographics">
+                <div class="sub02-sub03-tit">Economy</div>
+                <table class="apcourse-table country-table demographics">
+                  <tr>
+                    <th colspan="2">Estimate (World Ranking)</th>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">GDP (Nominal) in US $</th>
+                    <td>1.7 trillion (13th)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">GDP (PPP) in US $</th>
+                    <td>1.6 trillion (18th)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">GDP (PPP) per capita</th>
+                    <td>$61,941 (21st)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Composition of GDP</th>
+                    <td>
+                      Services: 78.8% <br />
+                      Construction: 9.2% <br />
+                      Manufacturing: 7.5% <br />
+                      Agriculture: 2.5% <br />
+                      Mining 1.9%
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Exports in US $</th>
+                    <td>480 billion (22nd)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Imports in US $</th>
+                    <td>420.4 billion (23rd)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Global Brands</th>
+                    <td>Qantas, Billabong, Kmart</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="country-demographics">
+                <div class="sub02-sub03-tit">Culture</div>
+                <div class="sub02-sub03-text-wrap sub05">
+                  <p>
+                    On top of the 16 natural World Heritage Sites, Australia is also known for its diverse culture that has been mostly due to its long history of immigration. Although it still has a
+                    primarily Western culture, influenced by European settlers, it has incorporated many elements from the waves of immigration from the rest of the world.
+                  </p>
+                </div>
+              </div>
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Art</div>
+                <div class="ent-wrap">
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="artA">
+                      <a href=""><img src="../images/sub/copy-right.png" class="copy-img" /></a>
+                    </div>
+                    <div class="ent-img-text">Sidney Nolan Exhibition</div>
+                  </div>
+                  <div class="country-map-wrap france">
+                    <div class="sub02-sub03-text-wrap">
+                      <p>
+                        On top of the 16 natural World Heritage Sites, Australia is also known for its diverse culture that has been mostly due to its long history of immigration. Although it still
+                        has a primarily Western culture, influenced by European settlers, it has incorporated many elements from the waves of immigration from the rest of the world.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Media</div>
+                <div class="ent-wrap">
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="mediaA">
+                      <a href=""><img src="../images/sub/copy-right.png" class="copy-img" /></a>
+                    </div>
+                    <div class="ent-img-text">Chris Hemsworth</div>
+                  </div>
+                  <div class="country-map-wrap france">
+                    <div class="sub02-sub03-text-wrap">
+                      <p>
+                        The Australian Media experienced a boom that came in the silent film era, but was met with a cessation in film production in the 1960s. By the 1970s, the Australian New Wave of
+                        media, funded by the government, brought about successful films such as Gallipoli, Crocodile Dundee and Mad Max. Australia is known for its actors, having won more than 55
+                        Academy Awards and 192 nominations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Cuisine</div>
+                <div class="ent-wrap">
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="Pavlova"></div>
+                    <div class="ent-img-text">Pavlova</div>
+                  </div>
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="Pie"></div>
+                    <div class="ent-img-text">Australian Meat Pie</div>
+                  </div>
+                </div>
+                <div class="country-map-wrap ent">
+                  <div class="sub02-sub03-text-wrap ent">
+                    <p>
+                      Multiple cultures have affected Australia Cuisine. The British and Irish culture of Australia resulted in dishes such as the Australian Meat Pie. The rich number of Cantonese
+                      settlers produced one of Australia’s favorite snacks, Chiko Roll. Other iconic foods of Australia include: pavlova, lamington, meat pies, and vegemite.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Sports</div>
+                <div class="country-sports-wrap aust">
+                  <div class="ent-img-wrap aust">
+                    <div class="ent-img" id="Cricket"></div>
+                    <div class="ent-img-text">Cricket in Australia</div>
+                  </div>
+                  <div class="country-map-wrap sport aust">
+                    <div class="sub02-sub03-text-wrap ent">
+                      <p>
+                        Cricket and football (rugby) are the two predominant sports in Australia. Cricket is considered to be the national sport of Australia, evident from the country's participation
+                        in every Cricket World Cup and tournaments. Australia is one of the 5 nations that have participated in every Summer Olympic Games in the modern era, hosting 2 of them in 1956
+                        (Melbourne) and 2000 (Sydney). Australia also hosts the global events such as Australian Open Tennis Grand Slam Tournament and Formula One Grand Prix. The country is also known
+                        for its abundant opportunity for water-based sports and outdoor adventure.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-search_bar">
+          <div class="input-area">
+            <input type="text" />
+          </div>
+          <div class="searchBtn">SEARCH PROGRAMS</div>
+        </div>
+        <div class="footer-info-wrap">
+          <div class="footer-logo">
+            <div><img src="../images/logo_color2.png" /></div>
+          </div>
+          <div class="footer-info">
+            <div class="info-text">
+              <div class="text-bold">Next Challenge School</div>
+              <div class="adress">
+                <span id="adress-img"><img src="../images/foot_loaction.png" /></span>
+                <span id="adress-text">
+                  16-9, Teheran-ro 64-gil, Gangnam-gu,<br />
+                  Seoul, Republic of Korea 06192
+                </span>
+              </div>
+              <div class="tel">
+                <img src="../images/foot_call.png" />
+                <span id="tel-text">410-516-8000</span>
+              </div>
+              <div class="sns-wrap">
+                <span><img src="../images/naverLogo.png" /></span>
+                <span><img src="../images/facebookLogo.png" /></span>
+                <span><img src="../images/linkLogo.png" /></span>
+                <span><img src="../images/youtubeLogo.png" /></span>
+                <span><img src="../images/instagramLogo.png" /></span>
+              </div>
+              <div class="copyRight">© 2022 Next Challenge School. All rights reserved.</div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li>ABOUT</li>
+              <li>ADMISSIONS</li>
+              <li>ACADEMICS</li>
+              <li>STUDENT LIFE</li>
+              <li>GLOBAL EXPERIENCES</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

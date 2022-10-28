@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/subResponsive.css" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    <title>NCS-sub01/sub01</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="logo">
+          <a href="/"><img src="../images/logo_wht2.png" /></a>
+        </div>
+        <div class="util">
+          <span class="search">
+            <img src="../images/search_icon.png" />
+            <span class="searchText">search</span>
+          </span>
+          <span class="hamburger"></span>
+        </div>
+      </header>
+      <div class="header-search">
+        <img src="../images/close_btn.gif" class="closeBtn" />
+        <div class="header-input-area">
+          <input type="text" onfocus="this.placeholder=''" onblur="this.placeholder='Search...'" placeholder="Search..." />
+          <img src="../images/search_icon.png" />
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <div class="nav-wrap">
+          <span class="hamburgerX">
+            <span class="lnr lnr-cross"></span>
+          </span>
+          <div class="nav-top">
+            <a href="/"><div class="nav-top_text">Home</div></a>
+          </div>
+
+          <div class="nav-bottom">
+            <ul class="dep1">
+              <li class="dep1-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">About</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Greetings</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Mission, Vision and Values</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Accreditation and Memberships</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">History</a>
+                    <span class="dep2-sub-tit">step 1 ~ step 5</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Our People</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Career Opportunities</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Contact</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep2-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Admissions</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Overview</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Important Dates & Deadlines</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Apply</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Tuition & Financial Aid</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Meet the Admissions Team</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Events</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep3-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Academics</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li class="dep3-3">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">Curriculum</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-3"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Overview</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Capstone Project</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Graduation Requirements</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">NEXT META</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <div class="dep3-wrap">
+                      <a href="javascript:void(0)" class="no-line">College Counseling</a>
+                      <span class="moreBtn_2">
+                        <span class="lnr lnr-chevron-down" id="more-4"></span>
+                      </span>
+                    </div>
+                    <ul class="dep3">
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Dual Courses</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="no-line">Project Based Learning</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Counseling</a>
+                        <span class="dep2-sub-tit">grade10 ~ 12</span>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">College Acceptances</a>
+                        <span class="dep2-sub-tit">by country</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dep3-4">
+                    <a href="javascript:void(0)" class="no-line">Academic Calendar</a>
+                  </li>
+                  <li class="dep3-5">
+                    <a href="javascript:void(0)" class="no-line">School Profile</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dep4-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title">Student Life</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Living Abroad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Diversity</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Clubs & Sports</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Outreach</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Spiritual Life</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Guest Speakers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dep5-1">
+                <div class="dep1-wrap">
+                  <a href="javascript:void(0)" class="dep1_title" class="no-line">Global Experiences</a>
+                  <span class="moreBtn">
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                </div>
+                <ul class="dep2">
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Experiential Learning</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Host Countries</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="no-line">Safety & Security</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="login">Login</div>
+        </div>
+      </nav>
+      <div class="nav-dim"></div>
+      <div class="sub-content">
+        <section class="sub-head">
+          <div class="sub-head-text sub04">
+            <div class="dep1-title">Global Experiences</div>
+            <div class="dep2-title">Grade 10</div>
+          </div>
+          <div class="sub-head-deco"></div>
+        </section>
+
+        <section class="sub05-sub01-sec sport">
+          <div class="sub05-sub01-wrap">
+            <div class="country-select-bar">
+              <a href=""><div class="country-btn active">South Korea</div></a>
+              <a href=""><div class="country-btn">France</div></a>
+              <a href=""><div class="country-btn">Australia</div></a>
+            </div>
+            <div class="country-info-wrap">
+              <div class="country-info-left france">
+                <div class="sub02-sub03-tit">Climate, Geography</div>
+                <div class="sub02-sub03-text-wrap">
+                  <p>France is the largest country in Western Europe, neighbor to Belgium, Germany, Switzerland, Spain, and Italy.</p>
+                </div>
+                <div class="sub02-sub03-text">France even has overseas regions across the world that hold the same status as mainland France such as</div>
+                <div class="sub02-sub03-text-wrap france">
+                  <p>
+                    Due to its massive territory, the climate in France is not uniform. The climate ranges from hot-summer Mediterranean to subalpine. The climate in Paris, its capital city, is
+                    oceanic, and has all 4 seasons.
+                  </p>
+                </div>
+              </div>
+              <div class="country-info-right">
+                <img src="../images/sub2/grade10_3.png" />
+              </div>
+            </div>
+            <div class="srcoll-wrap">
+              <table class="apcourse-table country-table">
+                <tr>
+                  <th></th>
+                  <th>Dec</th>
+                  <th>Jan</th>
+                  <th>Feb</th>
+                  <th>Mar</th>
+                  <th>Apr</th>
+                  <th>May</th>
+                  <th>Jun</th>
+                  <th>Jul</th>
+                  <th>Aug</th>
+                  <th>Sep</th>
+                  <th>Oct</th>
+                  <th>Nov</th>
+                </tr>
+                <tr>
+                  <th class="gray-th"></th>
+                  <th class="gray-th" colspan="2">Winter</th>
+                  <th class="gray-th" colspan="3">Spring</th>
+                  <th class="gray-th" colspan="4">Summer</th>
+                  <th class="gray-th" colspan="3">Autumn</th>
+                </tr>
+                <tr>
+                  <td>Max ˚C</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>12</td>
+                  <td>16</td>
+                  <td>20</td>
+                  <td>23</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>21</td>
+                  <td>16</td>
+                  <td>11</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Min ˚C</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>7</td>
+                  <td>11</td>
+                  <td>14</td>
+                  <td>16</td>
+                  <td>16</td>
+                  <td>13</td>
+                  <td>10</td>
+                  <td>6</td>
+                  <td>3</td>
+                </tr>
+              </table>
+            </div>
+            <div class="country-map-section">
+              <div class="sub02-sub03-tit">Administrative Divisions</div>
+              <div class="country-map-wrap aust">
+                <div class="country-map">
+                  <img src="../images/sub2/france_maps.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="country-demographics">
+              <div class="sub02-sub03-tit">Demographics</div>
+              <table class="apcourse-table country-table demographics">
+                <tr>
+                  <th colspan="2">2022 (World Ranking)</th>
+                </tr>
+                <tr>
+                  <th class="gray-th">Population</th>
+                  <td>64,628,119(23rd)</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Population in Paris</th>
+                  <td>2,138,551</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Population Growth Rate</th>
+                  <td>0.15%(180th)</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Life Expectancy</th>
+                  <td>83.2 years (20th)</td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Ethnicity</th>
+                  <td>
+                    85% Caucasian<br />
+                    10% Northwest African<br />
+                    3.3% African<br />
+                    1.7% Asian
+                  </td>
+                </tr>
+                <tr>
+                  <th class="gray-th">Language</th>
+                  <td>
+                    87.2% French<br />
+                    3.6% Arabic<br />
+                    1.5% Protuguese<br />
+                    1.2% Spanish<br />
+                    1% Italian
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="country-demographics">
+              <div class="sub02-sub03-tit">Education</div>
+              <div class="sub02-sub03-text-wrap sub05">
+                <p>
+                  The French education system is similar to that of the US. It consists of Primary school, collège (middle school), and lycée (high school). In the final year of their lycée, students
+                  take the baccalauréat (bac) examination to obtain the baccalauréat diploma.
+                </p>
+              </div>
+              <div class="sub02-sub03-text university">Top universities in France are</div>
+              <div class="university-wrap">
+                <div class="university-box">
+                  <img src="../images/sub2/france_uv_logo01.png" />
+                  <span class="university-txt"> Université PSL (Paris Sciences & Lettres) </span>
+                </div>
+
+                <div class="university-box">
+                  <img src="../images/sub2/france_uv_logo02.png" />
+                  <div class="university-txt">Ecole Polytechnique, Sorbonne University</div>
+                </div>
+
+                <div class="university-box">
+                  <img src="../images/sub2/france_uv_logo03.png" />
+                  <div class="university-txt">CentraleSupélec</div>
+                </div>
+
+                <div class="university-box">
+                  <img src="../images/sub2/france_uv_logo04.svg" />
+                  <div class="university-txt">École Normale Supérieure de Lyon</div>
+                </div>
+              </div>
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Religion</div>
+                <div class="country-map-wrap religion">
+                  <div class="country-map religion">
+                    <img src="../images/sub2/france_graph.png" />
+                    <div class="ent-img-text">Religion in South Korea</div>
+                  </div>
+                  <div class="country-map-info">
+                    <div class="local-row">
+                      <span class="local-color" id="no-religion"></span>
+                      <span class="local-name">No Religion</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="christianity"></span>
+                      <span class="local-name">Christianity</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="islam"></span>
+                      <span class="local-name">Islam</span>
+                    </div>
+
+                    <div class="local-row">
+                      <span class="local-color" id="others"></span>
+                      <span class="local-name">Others</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="country-demographics">
+                <div class="sub02-sub03-tit">Economy</div>
+                <table class="apcourse-table country-table demographics">
+                  <tr>
+                    <th colspan="2">Estimate (World Ranking)</th>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">GDP (Nominal) in US $</th>
+                    <td>3 trillion (7th)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">GDP (PPP) in US $</th>
+                    <td>3.3 trillion (10th)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">GDP (PPP) per capita</th>
+                    <td>$56,036 (26th)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Composition of GDP</th>
+                    <td>Services: 78.8% <br />Industry: 19.5% <br />Agriculture: 1.7%</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Exports in US $</th>
+                    <td>746.9 billion (10th)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Imports in US $</th>
+                    <td>803.6 billion (9th)</td>
+                  </tr>
+                  <tr>
+                    <th class="gray-th">Global Brands</th>
+                    <td>L’Oréal Paris, Louis Vuitton, Chanel, Hermès, AXA</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="country-demographics">
+                <div class="sub02-sub03-tit">Culture</div>
+                <div class="sub02-sub03-text-wrap sub05">
+                  <p>
+                    France has always been the center of Western cultural development for centuries. It is still considered as one of the most culture-rich countries. France holds 45 sites in the
+                    UNESCO World Heritage List, 1200 museums, and 85 national historical monuments.
+                  </p>
+                </div>
+              </div>
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Art</div>
+                <div class="ent-wrap">
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="art">
+                      <a href=""><img src="../images/sub/copy-right.png" class="copy-img" /></a>
+                    </div>
+                    <div class="ent-img-text">French Port of le havre by Claude Monet</div>
+                  </div>
+                  <div class="country-map-wrap france">
+                    <div class="sub02-sub03-text-wrap">
+                      <p>
+                        France is home to numerous artists like Claude Monet, Henri Matisse, Auguste Rodin, and even foreign artists like the Spanish painter Pablo Picasso and Dutch painter Vincent
+                        van Gogh, who settled and worked in Paris. The extensive history of France allows it to boast a wide array of architecture, dating back to the Medieval ages and the French
+                        Renaissance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Entertainment</div>
+                <div class="ent-wrap">
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="Fent">
+                      <a href=""><img src="../images/sub/copy-right.png" class="copy-img" /></a>
+                    </div>
+                    <div class="ent-img-text">Inventor of Cinema, Lumière Brothers</div>
+                  </div>
+                  <div class="country-map-wrap france">
+                    <div class="sub02-sub03-text-wrap">
+                      <p>
+                        France also has a strong link with Cinema. The French brothers of Auguste and Louis, Lumière, are credited with creating cinematography in 1895. As such, France remains a
+                        leader in filmmaking. Even more, France is the only nation in the world where American films make up only 50% of total film revenue.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Cuisine</div>
+                <div class="ent-wrap">
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="Baguette"></div>
+                    <div class="ent-img-text">Baguette</div>
+                  </div>
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="Croissant"></div>
+                    <div class="ent-img-text">Croissant</div>
+                  </div>
+                </div>
+                <div class="country-map-wrap ent">
+                  <div class="sub02-sub03-text-wrap ent">
+                    <p>
+                      French cuisine is also a crucial part of the culture. It is one of the world’s most renowned cuisines, demanded by many international fans. The usual French meal consists of 3
+                      parts: entreè (introductory dish), plat principal (main dish), fromage (cheese dish) or dessert. France is also known for its publication of the Michelin Guide, which bestows
+                      Michelin Stars to restaurants, serving as an indication of excellence.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="religion-wrap">
+                <div class="sub02-sub03-tit">Sports</div>
+                <div class="country-sports-wrap">
+                  <div class="ent-img-wrap">
+                    <div class="ent-img" id="Zidane">
+                      <a href=""><img src="../images/sub/copy-right.png" class="copy-img" /></a>
+                    </div>
+                    <div class="ent-img-text">French Soccer player, Zidane</div>
+                  </div>
+                  <div class="country-map-wrap sport">
+                    <div class="sub02-sub03-text-wrap ent">
+                      <p>
+                        France is no stranger to sporting events. In fact, it has been holding a handful of the largest annual sporting events such as the Tour de France, FIFA World Cups, Rugby World
+                        Cups, UEFA Euro, and even the Olympics. France offers public sports facilities such as football pitches, rugby stadiums, and athletic tracks that are free-to-use. Furthermore,
+                        its abundant landmass provides ample opportunity for outdoor sports and activities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-search_bar">
+          <div class="input-area">
+            <input type="text" />
+          </div>
+          <div class="searchBtn">SEARCH PROGRAMS</div>
+        </div>
+        <div class="footer-info-wrap">
+          <div class="footer-logo">
+            <div><img src="../images/logo_color2.png" /></div>
+          </div>
+          <div class="footer-info">
+            <div class="info-text">
+              <div class="text-bold">Next Challenge School</div>
+              <div class="adress">
+                <span id="adress-img"><img src="../images/foot_loaction.png" /></span>
+                <span id="adress-text">
+                  16-9, Teheran-ro 64-gil, Gangnam-gu,<br />
+                  Seoul, Republic of Korea 06192
+                </span>
+              </div>
+              <div class="tel">
+                <img src="../images/foot_call.png" />
+                <span id="tel-text">410-516-8000</span>
+              </div>
+              <div class="sns-wrap">
+                <span><img src="../images/naverLogo.png" /></span>
+                <span><img src="../images/facebookLogo.png" /></span>
+                <span><img src="../images/linkLogo.png" /></span>
+                <span><img src="../images/youtubeLogo.png" /></span>
+                <span><img src="../images/instagramLogo.png" /></span>
+              </div>
+              <div class="copyRight">© 2022 Next Challenge School. All rights reserved.</div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li>ABOUT</li>
+              <li>ADMISSIONS</li>
+              <li>ACADEMICS</li>
+              <li>STUDENT LIFE</li>
+              <li>GLOBAL EXPERIENCES</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

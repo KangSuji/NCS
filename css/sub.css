@@ -1208,7 +1208,7 @@ input[type="text"].aware-position {
 }
 .sub02-sub03-text {
   font-family: "Arial", Helvetica, sans-serif;
-  font-size: 1.75;
+  font-size: 1.75rem;
   line-height: 2.625rem;
   font-weight: bold;
   letter-spacing: -0.7px;
@@ -2162,4 +2162,106 @@ th.gray-th {
 }
 .local-color {
   flex-shrink: 0;
+}
+
+/* france */
+.country-info-left.france .sub02-sub03-text {
+  margin: 0;
+}
+.country-info-left.france .sub02-sub03-text-wrap {
+  margin-top: 80px;
+}
+.country-info-left.france .sub02-sub03-text-wrap.france {
+  margin-top: 20px;
+}
+.country-map-wrap.france {
+  justify-content: center;
+}
+.country-map-wrap.france .country-map {
+  width: 100%;
+}
+.country-map-wrap.france .country-map img {
+  max-width: 923px;
+}
+#christianity {
+  background-color: #3692d3;
+}
+#islam {
+  background-color: #9ac965;
+}
+#art {
+  background-image: url("/images/sub2/france_imgs01.png");
+  position: relative;
+}
+.country-map-wrap.france {
+  width: 50%;
+  display: block;
+  height: fit-content;
+}
+.country-map-wrap.france p {
+  margin-bottom: 0;
+}
+#Fent {
+  position: relative;
+  background-image: url("/images/sub2/france_imgs02.png");
+}
+#Baguette {
+  background-image: url("/images/sub2/france_imgs03.png");
+}
+#Croissant {
+  background-image: url("/images/sub2/france_imgs04.png");
+}
+#Zidane {
+  position: relative;
+  background-image: url("/images/sub2/france_imgs05.png");
+  min-height: 600px;
+}
+#Hinduism {
+  background-color: #ca97e8;
+}
+#Buddhism {
+  background-color: #f7e87c;
+}
+#Sikhism {
+  background-color: #989999;
+}
+#Judaism {
+  background-color: #37d1b7;
+}
+.country-map-wrap.aust {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.country-map-wrap.aust .country-map img {
+  width: 100%;
+  max-width: unset;
+}
+#artA {
+  position: relative;
+  background-image: url("/images/sub2/aust_imgs01.png");
+}
+#mediaA {
+  position: relative;
+  background-image: url("/images/sub2/aust_imgs02.png");
+  min-height: 600px;
+}
+#Pavlova {
+  position: relative;
+  background-image: url("/images/sub2/aust_imgs03.png");
+}
+#Pie {
+  position: relative;
+  background-image: url("/images/sub2/aust_imgs04.png");
+}
+.country-sports-wrap.aust {
+  flex-direction: column;
+}
+.ent-img-wrap.aust {
+  width: 100%;
+}
+#Cricket {
+  width: 100%;
+  max-width: 100%;
+  background-image: url("/images/sub2/aust_imgs05.png");
 }
