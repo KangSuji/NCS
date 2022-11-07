@@ -2408,3 +2408,165 @@ th.gray-th {
     width: 100%;
   }
 }
+
+/* 검색결과페이지 */
+.search-result {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.search-top,
+.search-box {
+  width: 100%;
+}
+.search-top {
+  background-color: #f8f8f8;
+  margin-top: 80px;
+}
+.search-box {
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+.search-top .search-box form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.search-box form select {
+  width: 20%;
+  height: 40px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.search-box form input[type="text"] {
+  width: 65%;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+.search-box form .search-btn {
+  width: calc(15% - 20px);
+  height: 40px;
+  line-height: 20px;
+  display: block;
+  border-radius: 5px;
+  background-color: #a10136;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.search-btm {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.search-btm-result {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.result-tit {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #01010d;
+}
+.result-txt {
+  margin: 20px 0 20px;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #666;
+}
+.keyword {
+  color: #a10136;
+}
+.result-total {
+  text-align: left;
+  position: relative;
+  margin-top: 50px;
+}
+.result-total:before {
+  content: "";
+  width: 5px;
+  height: 12px;
+  background: #a10136;
+  margin-right: 15px;
+  display: inline-block;
+}
+.goBtns {
+  width: fit-content;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #a10136;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.result-row {
+  width: 100%;
+  padding: 30px 0;
+}
+.row-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.row-info .num {
+  width: 10%;
+}
+.row-info .title {
+  width: 70%;
+}
+.row-info .date {
+  width: 20%;
+  text-align: right;
+}
+.result-row .ment {
+  margin-left: 10%;
+  width: 90%;
+  padding: 15px 0;
+  letter-spacing: 0.01em;
+  color: #666;
+}
+
+.no-result {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+.no-result .msg {
+  width: 100%;
+  text-align: center;
+}
+.no-result .msg p {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #666;
+}
+.no-result .msg p:first-child {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.yes-result {
+  /* display: none; */
+}

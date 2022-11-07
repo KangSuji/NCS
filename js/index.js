@@ -51,115 +51,52 @@ $(document).ready(function () {
   });
 
   //네비게이션 메뉴
-  $(".dep1-1").on("mouseenter", function (event) {
-    event.preventDefault();
-    $(`.dep1-1 > .dep2`).addClass("on");
-    $(`.dep1-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-up");
-  });
 
-  $(".dep1-1").on("mouseleave", function (event) {
-    event.preventDefault();
-    $(`.dep1-1 .dep2`).removeClass("on");
-    $(`.dep1-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-down");
-  });
+  //네비게이션 메뉴
+  var windowWidth = $(window).width();
 
-  $(".dep2-1").on("mouseenter", function (event) {
-    event.preventDefault();
-    $(`.dep2-1 > .dep2`).addClass("on");
-    $(`.dep2-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-up");
-  });
-
-  $(".dep2-1").on("mouseleave", function (event) {
-    event.preventDefault();
-    $(`.dep2-1 .dep2`).removeClass("on");
-    $(`.dep2-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-down");
-  });
-
-  $(".dep3-1").on("mouseenter", function (event) {
-    event.preventDefault();
-    $(`.dep3-1 > .dep2`).addClass("on");
-    $(`.dep3-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-up");
-    if ($(`.dep3-3 .moreBtn_2 > span`).hasClass("lnr-chevron-up")) {
-      $(`.dep3-3 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-    }
-    if ($(`.dep3-4 .moreBtn_2 > span`).hasClass("lnr-chevron-up")) {
-      $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-    }
-  });
-
-  $(".dep3-1").on("mouseleave", function (event) {
-    event.preventDefault();
-    $(`.dep3-1 .dep2`).removeClass("on");
-    $(`.dep3-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-down");
-    $(`.dep3-3 .dep3`).removeClass("on");
-    $(`.dep3-4 .dep3`).removeClass("on");
-  });
-
-  $("#more-3").on("click", function (event) {
-    $(`.dep3-4 .dep3`).removeClass("on");
-    $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-    event.preventDefault();
-    if ($(".dep3-3 > .dep3").hasClass("on")) {
-      $(`.dep3-3 .dep3`).removeClass("on");
-      $(`.dep3-3 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-    } else {
-      $(`.dep3-3 > .dep3`).addClass("on");
-      $(`.dep3-3 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-up");
-    }
-  });
-  $("#more-4").on("click", function (event) {
-    $(`.dep3-3 .dep3`).removeClass("on");
-    event.preventDefault();
-
-    if ($(".dep3-4 > .dep3").hasClass("on")) {
-      $(`.dep3-4 .dep3`).removeClass("on");
-      $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-    } else {
-      $(`.dep3-4 > .dep3`).addClass("on");
-      $(`.dep3-4 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-up");
-    }
-  });
-
-  $(".dep4-1").on("mouseenter", function (event) {
-    event.preventDefault();
-    $(`.dep4-1 > .dep2`).addClass("on");
-    $(".login").addClass("hide");
-    $(`.dep4-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-up");
-  });
-  $(".dep4-1").on("mouseleave", function (event) {
-    event.preventDefault();
-    $(`.dep4-1 .dep2`).removeClass("on");
-    $(".login").removeClass("hide");
-    $(`.dep4-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-down");
-    $(`.dep4-2 .dep3`).removeClass("on");
-    $(`.dep4-2 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-  });
-
-  $("#more-5").on("click", function (event) {
-    // $(`.dep4-1 .dep3`).removeClass("on");
-    event.preventDefault();
-
-    if ($(".dep4-2 > .dep3").hasClass("on")) {
-      $(`.dep4-2 .dep3`).removeClass("on");
-      $(`.dep4-2 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-down");
-    } else {
-      $(`.dep4-2 > .dep3`).addClass("on");
-      $(`.dep4-2 .moreBtn_2 > span`).attr("class", "lnr lnr-chevron-up");
-    }
-  });
-
-  $(".dep5-1").on("mouseenter", function (event) {
-    event.preventDefault();
-    $(`.dep5-1 > .dep2`).addClass("on");
-    $(".login").addClass("hide");
-    $(`.dep5-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-up");
-  });
-
-  $(".dep5-1").on("mouseleave", function (event) {
-    event.preventDefault();
-    $(`.dep5-1 .dep2`).removeClass("on");
-    $(".login").removeClass("hide");
-    $(`.dep5-1 .moreBtn > span`).attr("class", "lnr lnr-chevron-down");
+  if (windowWidth < 600) {
+    //창 가로 크기가 600 미만일 경우
+    $(".dep1 > li").each(function () {
+      $(this)
+        .children("div")
+        .click(function () {
+          $(this).parent().siblings().children().next("ul.dep2").removeClass("on");
+          $(this).parent().siblings().children().children(".moreBtn").children("span").attr("class", "lnr lnr-chevron-down");
+          $(this).next("ul.dep2").toggleClass("on");
+          if ($(this).next("ul.dep2").hasClass("on")) {
+            $(this).children(".moreBtn").children("span").attr("class", "lnr lnr-chevron-up");
+          } else {
+            $(this).children(".moreBtn").children("span").attr("class", "lnr lnr-chevron-down");
+          }
+        });
+    });
+  } else {
+    $(".dep1 > li").each(function () {
+      $(this).hover(function () {
+        $(this).children().children().children("ul.dep3").removeClass("on");
+        $(this).children(".dep2").children("li").children(".dep3-wrap").children(".moreBtn_2").children("span").attr("class", "lnr lnr-chevron-down");
+        $(this).children("ul.dep2").toggleClass("on");
+        if ($(this).children("ul.dep2").hasClass("on")) {
+          $(this).children(".dep1-wrap").children(".moreBtn").children("span").attr("class", "lnr lnr-chevron-up");
+        } else {
+          $(this).children(".dep1-wrap").children(".moreBtn").children("span").attr("class", "lnr lnr-chevron-down");
+        }
+      });
+    });
+  }
+  $(".dep2 > li").each(function () {
+    $(this)
+      .children("div")
+      .click(function () {
+        $(this).parent().siblings().children().next("ul.dep3").removeClass("on");
+        $(this).next("ul.dep3").toggleClass("on");
+        if ($(this).next("ul.dep3").hasClass("on")) {
+          $(this).children(".moreBtn_2").children("span").attr("class", "lnr lnr-chevron-up");
+        } else {
+          $(this).children(".moreBtn_2").children("span").attr("class", "lnr lnr-chevron-down");
+        }
+      });
   });
 
   // 메뉴 호버 색상적용
@@ -316,7 +253,7 @@ $(document).ready(function () {
     centerMode: true,
     slidesToShow: 3,
     initialSlide: 1,
-    infinite: true,
+    infinite: false,
     swipeToSlide: true,
     speed: 1300,
     nextArrow: $(".next"),
